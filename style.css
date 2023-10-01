@@ -6,6 +6,62 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-black: #16181b;
+  --bg-main: #002e4c;
+
+  --color-first: white;
+  --hover-first: rgb(189, 189, 189);
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Parte do Header */
+header {
+  background-color: #16181b;
+  padding: 25px 0px 25px 0px;
+  border-bottom: 2px solid var(--color-first);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 60px;
+}
+
+nav ul li a {
+  color: var(--color-first);
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: var(--hover-first);
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
+}
+
+.bt-login a {
+  color: var(--color-first);
+  font-size: 40px;
+}
+.bt-login a:hover {
+  color: var(--hover-first);
+}
+
+/* Pagina de Home */
+/* Parte da Main */
+main {
+  background-color: var(--bg-main);
+  height: 100vh;
 }
