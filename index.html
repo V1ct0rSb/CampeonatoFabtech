@@ -6,6 +6,7 @@
     <title>Campeonato</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <div class="logo">
@@ -27,13 +28,84 @@
     </header>
 
     <main>
-      <section>
-        <h2>Conteudo 1</h2>
-      </section>
+      <div class="container">
+        <div class="carousel">
+          <!-- confronto 01 -->
+          <div class="card-slider active">
+            <div class="header-card-slider">
+              <h2>Campeonato Amador 01</h2>
+              <p>Horário: 19:00</p>
+            </div>
 
-      <section>
-        <h2>Conteudo 2</h2>
-      </section>
+            <div class="plays-card-slider">
+              <div class="play01">
+                <img src="assets/img/Internacional.png" alt="" />
+                <p>Internacional</p>
+              </div>
+
+              <div class="score-card-slider">
+                <p>2 - 2</p>
+              </div>
+
+              <div class="play02">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Framengo</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- confronto 02 -->
+          <div class="card-slider">
+            <div class="header-card-slider">
+              <h2>Campeonato Amador</h2>
+              <p>Horário: 07:00</p>
+            </div>
+
+            <div class="plays-card-slider">
+              <div class="play01">
+                <img src="assets/img/barcelona.png" alt="" />
+                <p>BarSemLona</p>
+              </div>
+
+              <div class="score-card-slider">
+                <p>3 - 1</p>
+              </div>
+
+              <div class="play02">
+                <img src="assets/img/Servilla.png" alt="" />
+                <p>Servilla</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- confronto 03 -->
+          <div class="card-slider">
+            <div class="header-card-slider">
+              <h2>Campeonato Amador 03</h2>
+              <p>Horário: 21:00</p>
+            </div>
+
+            <div class="plays-card-slider">
+              <div class="play01">
+                <img src="assets/img/Flamengo.png" alt="" />
+                <p>Framengo</p>
+              </div>
+
+              <div class="score-card-slider">
+                <p>2 - 4</p>
+              </div>
+
+              <div class="play02">
+                <img src="assets/img/barcelona.png" alt="" />
+                <p>BarSemLona</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add mais cartões conforme necessário -->
+        </div>
+        <button id="prevButton">Anterior</button>
+        <button id="nextButton">Próximo</button>
+      </div>
     </main>
 
     <footer><p>Rodapé do site</p></footer>
@@ -46,4 +118,6 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+
+  <script src="script.js"></script>
 </html>
