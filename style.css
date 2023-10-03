@@ -21,12 +21,17 @@ body {
 /* Parte do Header */
 header {
   background-color: #16181b;
-  padding: 25px 0px 25px 0px;
+  padding: 15px 0px 15px 0px;
   border-bottom: 2px solid var(--color-first);
 
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.logo a img {
+  width: 100px;
+  height: 80px;
 }
 
 nav ul {
@@ -57,6 +62,12 @@ nav ul li a:hover {
 }
 .bt-login a:hover {
   color: var(--hover-first);
+}
+/* Responsividade parcial do header */
+@media screen and (max-width: 1024px) {
+  nav ul li {
+    margin-right: 30px;
+  }
 }
 
 /* Pagina de Home */
