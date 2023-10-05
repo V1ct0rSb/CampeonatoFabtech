@@ -192,8 +192,6 @@ td, th{
 }
 
 
-
-
 .classificacao{
   padding: 30px;
   text-align: center;
@@ -228,19 +226,108 @@ th:hover{
 
 /* Tela de Login*/
 
-.box{
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 150px;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+.custom-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://media.istockphoto.com/id/545356586/pt/foto/estádio-de-futebol-de-futebol-com-projectores.jpg?s=612x612&w=0&k=20&c=gAOC_MmTL0-2PuLZH_Vv7jyl4t4tqIe1xCDZBu4s1VU=');
+  background-size: cover;
+  background-position: center;
 }
 
-.titulo{
-  font-size: 45px;
+
+.login-container {
+  background-color: rgba(0, 0, 0, 0.356);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
   text-align: center;
-  margin: 30px;
-  padding: 15px;
+  margin-bottom: 20px;
 }
 
+.login-container section {
+  margin-bottom: 20px;
+}
 
+.login-container span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-container button {
+  background-color: #007BFF;
+  color: var(--color-first);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-container .social-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-container .social-buttons button {
+  background-color: #3b5998; /* Facebook Blue */
+  color: var(--color-first);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 5px;
+}
+
+.login-container .social-buttons button.google {
+  background-color: #4285F4; /* Google Blue */
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.forgot-password a {
+  color: red;
+  text-decoration: none;
+}
+
+.google a{
+  text-decoration: none;
+  color: var(--color-first);
+}
+
+.facebook a{
+  text-decoration: none;
+  color: var(--color-first);
+}
+
+span{
+  color: var(--color-first);
+}
+
+.login-container h2{
+  color: var(--color-first);
+}
