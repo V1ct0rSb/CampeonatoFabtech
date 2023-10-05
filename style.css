@@ -161,3 +161,86 @@ main {
 #nextButton:hover {
   background-color: #0056b3;
 }
+
+
+/* Tela de Classificação*/
+
+
+body{
+  background-color:#002e4c;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  vertical-align: baseline;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+table{
+  border-collapse: collapse;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 100px;
+  
+}
+
+td, th{
+  border: 2px solid black;
+  padding: 10px 10px;
+  background-color: rgba(128, 128, 128, 0.726);
+  color: var(--color-first);
+  text-align: center;
+}
+
+
+
+
+.classificacao{
+  padding: 30px;
+  text-align: center;
+  font-size: 34px;
+  color: var(--color-first);
+
+}
+
+h3{
+  padding: 10px;
+  margin: 30px;
+  text-decoration: underline;
+  font-size: 28px;
+  color: var(--color-first);
+  
+}
+
+h4{
+  padding: 10px;
+  margin: 30px;
+  font-size: 22px;
+  color: var(--color-first);
+}
+
+td:hover{
+  background-color: #0056b3; /* Quero a linha toda!*/
+}
+th:hover{
+  background-color: #0056b3;
+}
+
+
+/* Tela de Login*/
+
+.box{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 150px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.titulo{
+  font-size: 45px;
+  text-align: center;
+  margin: 30px;
+  padding: 15px;
+}
+
+
