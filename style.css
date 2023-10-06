@@ -74,7 +74,7 @@ nav ul li a:hover {
 /* Parte da Main */
 main {
   background-color: var(--bg-main);
-  height: 100vh;
+  height: 100%;
 }
 
 /* Parte do Carrosel de Confrontos */
@@ -162,80 +162,88 @@ main {
   background-color: #0056b3;
 }
 
-
 /* Tela de Classificação*/
-
-
-body{
-  background-color:#002e4c;
-  font-size: 15px;
-  font-family: 'Poppins', sans-serif;
-  vertical-align: baseline;
-  line-height: 25px;
-  font-weight: 400;
+.container-class {
+  width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-table{
-  border-collapse: collapse;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10px 100px;
-  
-}
-
-td, th{
-  border: 2px solid black;
-  padding: 10px 10px;
-  background-color: rgba(128, 128, 128, 0.726);
-  color: var(--color-first);
+.container-class h2 {
+  color: white;
   text-align: center;
+  padding: 15px 0px 30px 0px;
+  font-size: 40px;
 }
 
-
-.classificacao{
-  padding: 30px;
-  text-align: center;
-  font-size: 34px;
-  color: var(--color-first);
-
-}
-
-h3{
-  padding: 10px;
-  margin: 30px;
+.container-class h3 {
+  text-align: left;
+  color: white;
+  font-size: 30px;
+  padding: 15px 0px 25px 0px;
   text-decoration: underline;
-  font-size: 28px;
-  color: var(--color-first);
-  
 }
 
-h4{
+.container-class h4 {
+  font-size: 25px;
+  color: white;
+  padding: 15px 0px 20px 0px;
+}
+
+.container-class table {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.container-class th,
+.container-class td {
   padding: 10px;
-  margin: 30px;
-  font-size: 22px;
-  color: var(--color-first);
+  text-align: center;
 }
 
-td:hover{
-  background-color: #0056b3; /* Quero a linha toda!*/
-}
-th:hover{
-  background-color: #0056b3;
+.container-class th {
+  background-color: rgba(163, 163, 163, 0.728);
+  color: white;
 }
 
+.container-class tr {
+  background-color: rgba(128, 128, 128, 0.728);
+  color: rgb(255, 255, 255);
+}
+.container-class tr:hover {
+  background: rgba(163, 163, 163, 0.728);
+  color: var(--bg-black);
+}
+
+.alinhar-time {
+  display: flex;
+  align-items: center;
+}
+
+.alinhar-time img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.primeiros {
+  border-left: 3px solid rgb(1, 255, 1);
+}
+
+.ultimo {
+  border-left: 3px solid red;
+}
 
 /* Tela de Login*/
-
 .custom-body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('https://media.istockphoto.com/id/545356586/pt/foto/estádio-de-futebol-de-futebol-com-projectores.jpg?s=612x612&w=0&k=20&c=gAOC_MmTL0-2PuLZH_Vv7jyl4t4tqIe1xCDZBu4s1VU=');
+  background-image: url("https://media.istockphoto.com/id/545356586/pt/foto/estádio-de-futebol-de-futebol-com-projectores.jpg?s=612x612&w=0&k=20&c=gAOC_MmTL0-2PuLZH_Vv7jyl4t4tqIe1xCDZBu4s1VU=");
   background-size: cover;
   background-position: center;
 }
-
 
 .login-container {
   background-color: rgba(0, 0, 0, 0.356);
@@ -263,12 +271,12 @@ th:hover{
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid;
   border-radius: 3px;
 }
 
 .login-container button {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: var(--color-first);
   border: none;
   border-radius: 3px;
@@ -299,14 +307,13 @@ th:hover{
 }
 
 .login-container .social-buttons button.google {
-  background-color: #4285F4; /* Google Blue */
+  background-color: #4285f4; /* Google Blue */
 }
 
 .forgot-password {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  
 }
 
 .forgot-password a {
@@ -314,20 +321,20 @@ th:hover{
   text-decoration: none;
 }
 
-.google a{
+.google a {
   text-decoration: none;
   color: var(--color-first);
 }
 
-.facebook a{
+.facebook a {
   text-decoration: none;
   color: var(--color-first);
 }
 
-span{
+span {
   color: var(--color-first);
 }
 
-.login-container h2{
+.login-container h2 {
   color: var(--color-first);
 }
