@@ -340,3 +340,141 @@ main {
   background-size: cover; /* Para cobrir toda a tela */
   background-position: center; /* Centralize a imagem */
 }
+
+/*Estilo da Tela de Mídia*/
+
+.container-midia {
+  width: 1400px;
+  margin: auto;
+  border: 1px solid #ccc;
+  height: 80vh;
+}
+
+.noticia{
+  width: 1350px;
+  background-color: white;
+  height: 400px;
+  border: 1px solid red;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video {
+  padding: 10px;
+}
+
+.texto {
+  border: 1px solid red;
+  padding: 10px;
+  text-align: center;
+}
+
+.texto h2 {
+  font-size: 26px;
+  text-align: center;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  padding: 10px;
+}
+
+.texto p {
+  font-size: 16px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  text-align: justify;
+}
+
+.leia a {
+  width: 70px;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.leia:hover{
+  background-color: wheat;
+  border-radius: 10px;
+}
+
+/* Estilo da Tela de Noticia*/
+.title {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+.teste {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px;
+}
+
+.video-container {
+  text-align: center;
+}
+
+.video {
+  width: 1000px;
+  max-width: 560px;
+  height: 300px;
+}
+
+.texto-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.texto-container h2{
+  font-size: 20px;
+  margin: 10px;
+}
+
+.descricao {
+  font-size: 16px;
+  text-align: justify;
+  
+}
+
+.conteudo {
+  text-align: center; 
+}
+
+.imagem-texto {
+  display: flex;
+  align-items: center; 
+}
+
+.imagem-noticia {
+  max-width: 300px; 
+  margin-right: 10px; 
+}
+
+.text {
+  flex: 1; 
+  text-align: left; 
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
