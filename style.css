@@ -453,3 +453,55 @@ footer a {
   text-decoration: none;
   margin: 0 10px;
 }
+
+/* ----------------------------Tela de Partidas----------------------------*/
+.container-box {
+  width: 700px;
+  margin: 0 auto;
+  background-color: azure;
+}
+
+.logo{
+  white-space: 20px;
+}
+
+.titulo-campeonato {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+
+.tabela th,
+.tabela td {
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.tabela th {
+  background-color: white;
+}
+
+.tabela td {
+  background-color: #00b0ff;
+}
+
+.logo-time {
+  max-width: 30px;
+  max-height: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.container-box h3{
+  font-size: 28px;
+  margin: 20px;
+}
+
