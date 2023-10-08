@@ -433,3 +433,23 @@ nav ul li a:hover {
   font-size: 18px;
   text-align: justify;
 }
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  background-color: var(--bg-black);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 2px solid white;
+}
+
+footer p {
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
