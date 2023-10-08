@@ -461,7 +461,7 @@ footer a {
   background-color: azure;
 }
 
-.logo{
+.logo {
   white-space: 20px;
 }
 
@@ -471,13 +471,11 @@ footer a {
   margin: 20px;
 }
 
-
 .tabela {
   width: 100%;
   border-collapse: collapse;
   margin: auto;
 }
-
 
 .tabela th,
 .tabela td {
@@ -500,8 +498,58 @@ footer a {
   margin-right: 5px;
 }
 
-.container-box h3{
+.container-box h3 {
   font-size: 28px;
   margin: 20px;
 }
 
+/* ----------------------------Pagina de estatistica---------------------------- */
+/* Estilo das seções */
+.container-estatistica section {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo das tabelas */
+.container-estatistica table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.container-estatistica th,
+.container-estatistica td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.container-estatistica th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos para as células que contêm imagens e logotipos */
+.container-estatistica td img {
+  display: block;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.container-estatistica td {
+  text-align: center; /* Centraliza horizontalmente o texto dentro das células */
+  vertical-align: middle; /* Centraliza verticalmente o conteúdo */
+}
+
+.container-estatistica section img {
+  max-width: 50px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+}
+/* Estilos para o gráfico de barras */
+#grafico-de-barras {
+  max-height: 600px;
+  margin: 0 auto;
+  display: block;
+}
