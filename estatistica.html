@@ -31,6 +31,10 @@
       </div>
     </header>
 
+    <button id="topButton" onclick="scrollTopFunction()">
+      <i class="ion-ios-arrow-up"></i> Voltar ao Topo
+    </button>
+
     <main class="container-estatistica">
       <section id="resultados">
         <h2>Resultados de Jogos</h2>
@@ -293,7 +297,7 @@
         <canvas id="grafico-de-barras" width="400" height="200"></canvas>
       </section>
     </main>
-    
+
     <footer>
       <p>&copy; 2023</p>
       <p>
@@ -351,4 +355,6 @@
     const ctx = document.getElementById("grafico-de-barras").getContext("2d");
     new Chart(ctx, config);
   </script>
+
+  <script src="topo.js"></script>
 </html>
