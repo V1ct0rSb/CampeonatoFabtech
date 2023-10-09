@@ -20,19 +20,20 @@ body {
 }
 
 /* ----------------------------Parte do Header---------------------------- */
+/* Header */
 header {
-  background-color: #16181b;
-  padding: 15px 0px 15px 0px;
+  background-color: var(--bg-black);
+  padding: 15px 0;
   border-bottom: 2px solid var(--color-first);
-
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .logo a img {
-  width: 100px;
-  height: 80px;
+  max-width: 110px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
 }
 
 nav ul {
@@ -65,10 +66,34 @@ nav ul li a:hover {
 .bt-login a:hover {
   color: var(--hover-first);
 }
-/* Responsividade parcial do header */
-@media screen and (max-width: 1024px) {
+
+/* Responsividade header */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .logo a img {
+    max-width: 90px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
   nav ul li {
-    margin-right: 30px;
+    margin: 10px 0;
+  }
+
+  .bt-login a {
+    font-size: 30px;
+    margin-top: 10px;
   }
 }
 
