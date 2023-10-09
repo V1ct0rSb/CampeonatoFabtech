@@ -7,11 +7,14 @@
 }
 
 :root {
-  --bg-black: #16181b;
+  --bg-box: #16181b;
   --bg-main: #002e4c;
+  /* --bg-box: #1b1b1b; */
 
-  --color-first: white;
-  --hover-first: rgb(189, 189, 189);
+  --color-first: #aeff00;
+  --color-second: white;
+
+  --hover-first: #00fd8f;
 }
 
 body {
@@ -22,7 +25,7 @@ body {
 /* ----------------------------Parte do Header---------------------------- */
 /* Header */
 header {
-  background-color: var(--bg-black);
+  background-color: var(--bg-box);
   padding: 15px 0;
   border-bottom: 2px solid var(--color-first);
   display: flex;
@@ -46,7 +49,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--color-first);
+  color: var(--color-second);
   font-weight: bolder;
   font-size: 20px;
   text-decoration: none;
@@ -60,7 +63,7 @@ nav ul li a:hover {
 }
 
 .bt-login a {
-  color: var(--color-first);
+  color: var(--color-second);
   font-size: 40px;
 }
 .bt-login a:hover {
@@ -112,16 +115,18 @@ nav ul li a:hover {
   display: flex;
   justify-content: center; /* Centralizar os cartões horizontalmente */
   transition: transform 0.5s ease-in-out;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .card-slider {
   width: 1200px; /* Aumente o tamanho do cartão conforme necessário */
-  background-color: #e8e8e8;
+  background-color: var(--bg-box);
   display: none; /* Inicialmente, todos os cartões estão ocultos */
   text-align: center;
   border-radius: 10px;
   padding: 20px 0px 20px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .card-slider.active {
@@ -130,6 +135,15 @@ nav ul li a:hover {
 
 .card-slider.active .header-card-slider {
   padding-bottom: 10px;
+}
+
+.header-card-slider h2 {
+  color: var(--color-first);
+  font-size: 40px;
+}
+.header-card-slider p {
+  color: var(--color-second);
+  font-size: 20px;
 }
 
 .plays-card-slider {
@@ -147,39 +161,41 @@ nav ul li a:hover {
 
 .play01 p {
   background: #a50044;
-  color: white;
+  color: var(--color-second);
   font-size: 25px;
   font-weight: bold;
 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-top: 3px solid black;
+  border-top: 3px solid var(--color-first);
 }
 
 .play02 p {
   background: #cb0f20;
-  color: white;
+  color: var(--color-second);
   font-size: 25px;
   font-weight: bold;
 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-top: 3px solid black;
+  border-top: 3px solid var(--color-first);
 }
 
 .score-card-slider p {
   padding-top: 100px;
   font-size: 40px;
+  color: var(--color-second);
 }
 /* Estilos para os botões de navegação */
 #prevButton,
 #nextButton {
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  background-color: var(--color-first);
+  color: var(--bg-box);
+  border: 3px solid var(--color-first);
   cursor: pointer;
+  font-weight: bold;
 }
 
 #prevButton {
@@ -188,22 +204,25 @@ nav ul li a:hover {
 
 #prevButton:hover,
 #nextButton:hover {
-  background-color: #0056b3;
+  background-color: var(--color-second);
+  border: 3px solid var(--color-first);
 }
 
 /* ----------------------------Tela de Classificação----------------------------*/
 .container-class {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 20px;
-  color: white;
   text-align: center;
+  background: var(--bg-box);
+  border-radius: 10px;
 }
 
 .container-class h2 {
   font-size: 40px;
   padding: 15px 0px 30px 0px;
+  color: var(--color-first);
 }
 
 .container-class h3 {
@@ -211,11 +230,13 @@ nav ul li a:hover {
   padding: 15px 0px 25px 0px;
   text-decoration: underline;
   text-align: left;
+  color: var(--color-first);
 }
 
 .container-class h4 {
   font-size: 25px;
   padding: 15px 0px 20px 0px;
+  color: var(--color-first);
 }
 
 .container-class .grupo {
@@ -405,12 +426,12 @@ nav ul li a:hover {
 
 /*----------------------------Tela de Mídia----------------------------*/
 /* Estilos para a seção da notícia */
-.noticia {
+.midia {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
-  background-color: #fff;
+  background-color: var(--bg-box);
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   overflow: hidden;
@@ -431,13 +452,13 @@ nav ul li a:hover {
 
 .texto h2 {
   font-size: 24px;
-  color: #333;
+  color: var(--color-first);
   margin-bottom: 20px;
 }
 
 .texto p {
   font-size: 16px;
-  color: #555;
+  color: var(--color-second);
   margin-bottom: 20px;
   line-height: 25px;
   text-align: justify;
@@ -445,19 +466,27 @@ nav ul li a:hover {
 }
 
 .leia {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--color-first);
+  color: var(--bg-box);
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
+  border: 3px solid var(--color-first);
 }
 
 .leia a {
-  color: #fff;
+  color: var(--bg-box);
+  font-weight: bold;
   text-decoration: none;
+}
+
+.leia:hover {
+  background-color: var(--color-second);
+  border: 3px solid var(--color-first);
+  box-shadow: 0 0 25px var(--color-first);
 }
 
 /* Estilos para o vídeo incorporado */
@@ -501,14 +530,14 @@ nav ul li a:hover {
   text-align: justify;
 }
 
-/* FOOTER */
+/* ----------------------------FOOTER---------------------------- */
 footer {
   margin-top: 40px;
-  background-color: var(--bg-black);
-  color: #fff;
+  background-color: var(--bg-box);
+  color: var(--color-second);
   padding: 20px 0;
   text-align: center;
-  border-top: 2px solid white;
+  border-top: 2px solid var(--color-first);
 }
 
 footer p {
@@ -525,9 +554,9 @@ footer a {
 /* Estilo para o container principal */
 .container-box {
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--bg-box);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
@@ -546,13 +575,15 @@ footer a {
   text-align: center;
   font-size: 24px;
   margin-top: 10px;
+  color: var(--color-first);
 }
 
 /* Estilo para os títulos das fases do campeonato */
 .container-box h2 {
   font-size: 20px;
   margin-top: 20px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #ccc;
+  color: var(--color-first);
 }
 
 /* Estilo para as tabelas de partidas */
@@ -569,9 +600,18 @@ footer a {
   border: 1px solid #ccc;
 }
 
+.container-box .tabela td {
+  color: var(--color-second);
+}
+
 .container-box .tabela th {
   background-color: #333;
   color: #fff;
+}
+
+.info-torcedores p {
+  margin-top: 10px;
+  color: var(--color-second);
 }
 
 /* Estilo para os nomes dos times */
@@ -615,14 +655,20 @@ footer a {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+#rodada-select:hover {
+  background-color: #ccc;
 }
 
 /* ----------------------------Pagina de estatistica---------------------------- */
 /* Estilo das seções */
 .container-estatistica section {
   max-width: 1200px;
-  margin: 20px auto; /* Centraliza o conteúdo horizontalmente */
-  background-color: #fff;
+  margin: 30px auto; /* Centraliza o conteúdo horizontalmente */
+  background-color: var(--bg-box);
   padding: 20px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -635,6 +681,7 @@ footer a {
   text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
   text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
   text-align: center;
+  color: var(--color-first);
 }
 
 /* Estilo das tabelas */
@@ -652,7 +699,7 @@ footer a {
 
 .container-estatistica th {
   background-color: #333;
-  color: #fff;
+  color: var(--color-second);
 }
 
 /* Estilos para as células que contêm imagens e logotipos */
@@ -664,6 +711,7 @@ footer a {
 .container-estatistica td {
   text-align: center; /* Centraliza horizontalmente o texto dentro das células */
   vertical-align: middle; /* Centraliza verticalmente o conteúdo */
+  color: var(--color-second);
 }
 
 .container-estatistica section img {
@@ -687,7 +735,6 @@ footer a {
 }
 
 /* Função de subir para o topo*/
-/* styles.css */
 #topButton {
   display: none;
   position: fixed;
@@ -695,14 +742,18 @@ footer a {
   right: 30px;
   z-index: 99;
   font-size: 16px;
-  background-color: #007bff;
-  color: white;
+  background-color: var(--color-first);
+  color: var(--bg-box);
   border: none;
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
+  font-weight: bold;
+  border: 3px solid var(--color-first);
 }
 
 #topButton:hover {
-  background-color: #0056b3;
+  background-color: var(--color-second);
+  border: 3px solid var(--color-first);
+  box-shadow: 0 0 25px var(--color-first);
 }
