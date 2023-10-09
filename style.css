@@ -116,10 +116,10 @@ nav ul li a:hover {
 }
 
 .card-slider {
-  width: 900px; /* Aumente o tamanho do cartão conforme necessário */
-  background-color: #f5f5f5;
+  width: 1200px; /* Aumente o tamanho do cartão conforme necessário */
+  background-color: #e8e8e8;
   display: none; /* Inicialmente, todos os cartões estão ocultos */
-  text-align: center; /* Alinhar o texto à esquerda */
+  text-align: center;
   border-radius: 10px;
   padding: 20px 0px 20px 0px;
 }
@@ -135,6 +135,14 @@ nav ul li a:hover {
 .plays-card-slider {
   display: flex;
   justify-content: space-around;
+}
+
+.play01 img,
+.play02 img {
+  max-width: 300px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .play01 p {
