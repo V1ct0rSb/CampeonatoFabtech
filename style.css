@@ -267,7 +267,7 @@ nav ul li a:hover {
 }
 
 /* Responsividade para dispositivos menores */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .container-class {
     padding: 10px;
   }
