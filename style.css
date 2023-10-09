@@ -522,52 +522,99 @@ footer a {
 }
 
 /* ----------------------------Tela de Partidas----------------------------*/
+/* Estilo para o container principal */
 .container-box {
-  width: 700px;
-  margin: 0 auto;
-  background-color: azure;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
-.logo {
-  white-space: 20px;
+/* Estilo para o logotipo da liga */
+.container-box .logo {
+  max-width: 400px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  display: block; /* Adicione esta linha para centralizar horizontalmente */
+  margin: 0 auto; /* Adicione esta linha para centralizar horizontalmente */
+  border-radius: 10%;
 }
 
-.titulo-campeonato {
-  font-size: 30px;
+/* Estilo para o título do campeonato */
+.container-box .titulo-campeonato {
   text-align: center;
-  margin: 20px;
+  font-size: 24px;
+  margin-top: 10px;
 }
 
-.tabela {
+/* Estilo para os títulos das fases do campeonato */
+.container-box h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  border-bottom: 2px solid #333;
+}
+
+/* Estilo para as tabelas de partidas */
+.container-box .tabela {
   width: 100%;
   border-collapse: collapse;
-  margin: auto;
+  margin-top: 10px;
 }
 
-.tabela th,
-.tabela td {
-  border: 1px solid red;
+.container-box .tabela th,
+.container-box .tabela td {
   padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
 }
 
-.tabela th {
-  background-color: white;
+.container-box .tabela th {
+  background-color: #333;
+  color: #fff;
 }
 
-.tabela td {
-  background-color: #00b0ff;
-}
-
-.logo-time {
-  max-width: 30px;
-  max-height: 30px;
+/* Estilo para os nomes dos times */
+.container-box .logo-time {
+  width: 30px;
   vertical-align: middle;
   margin-right: 5px;
 }
 
-.container-box h3 {
-  font-size: 28px;
-  margin: 20px;
+/* Estilo para a seção de informações para torcedores */
+.container-box .info-torcedores {
+  margin-top: 40px;
+}
+
+/* Estilo para a seção de redes sociais */
+.container-box .redes-sociais {
+  margin-top: 40px;
+}
+
+.container-box .redes-sociais ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-box .redes-sociais ul li {
+  margin-bottom: 10px;
+}
+
+.container-box .redes-sociais a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.container-box .redes-sociais a:hover {
+  text-decoration: underline;
+}
+
+#rodada-select {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 /* ----------------------------Pagina de estatistica---------------------------- */

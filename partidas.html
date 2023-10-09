@@ -33,69 +33,71 @@
 
     <main>
       <div class="container-box">
-        <img src="img/Campeonato.jpeg" alt="Logotipo da liga" class="logo">
+        <img
+          src="assets/img/Campeonato.jpeg"
+          alt="Logotipo da liga"
+          class="logo"
+        />
         <h3 class="titulo-campeonato">Campeonato de Cervejaria: Grupo A</h3>
-        <h3>Rodada 1</h3>
-        <table class="tabela">
-            <tr>
-                <th>Horário</th>
-                <th>Time A</th>
-                <th>Placar</th>
-                <th>Time B</th>
-                <th>Árbitro</th>
-                <th>Data</th>
-                <th>Arena</th>
-            </tr>
-            <tr>
-                <td>16:00</td>
-                <td>
-                    <img class="logo-time" src="logo-time-a.png" alt="Logo Time A"> Fluminense
-                    <p>Fluminense</p>
-                </td>
-                <td>10x10</td>
-                <td>
-                    <img class="logo-time" src="logo-time-b.png" alt="Logo Time B"> Botafogo
-                    <p>Botafogo</p>
-                </td>
-                <td>Anderson Daronco</td>
-                <td>01/10/2023</td>
-                <td>Maracanã</td>
-            </tr>
-            <!-- Adicione mais partidas conforme necessário -->
-        </table>
-    
-        <h3>Rodada 2</h3>
-        <table class="tabela">
-            <tr>
-                <th>Horário</th>
-                <th>Time C</th>
-                <th>Placar</th>
-                <th>Time D</th>
-                <th>Árbitro</th>
-                <th>Data</th>
-                <th>Arena</th>
-            </tr>
-            <tr>
-                <td>18:30</td>
-                <td>
-                    <img class="logo-time" src="logo-time-c.png" alt="Logo Time C"> Santos
-                    <p>Santos</p>
-                </td>
-                <td>2x1</td>
-                <td>
-                    <img class="logo-time" src="img/palmeiras.jpg" alt="Logo Time D"> Palmeiras
-                    <p>Palmeiras</p>
-                </td>
-                <td>Wilmar Roldán</td>
-                <td>02/10/2023</td>
-                <td>Vila Belmiro</td>
-            </tr>
-            <!-- Adicione mais partidas conforme necessário -->
-        </table>
-    </main>
 
+        <!-- Fase do Campeonato -->
+        <h2>Fase de Grupos</h2>
+
+        <!-- Dropdown para seleção de rodada -->
+        <select id="rodada-select">
+          <option value="rodada1">Rodada 1</option>
+          <option value="rodada2">Rodada 2</option>
+          <!-- Adicione mais opções conforme necessário -->
+        </select>
+
+        <!-- Tabelas para próximos jogos e jogos encerrados -->
+        <div class="tabelas">
+          <div id="jogos-proximos" class="tabela">
+            <!-- Conteúdo da tabela de próximos jogos será preenchido via JavaScript -->
+          </div>
+        </div>
+
+        <!-- Ingressos e Informações para Torcedores -->
+        <div class="info-torcedores">
+          <h2>Ingressos e Informações para Torcedores</h2>
+          <p>
+            <strong>Preços dos Ingressos:</strong> Verifique os preços dos
+            ingressos no site oficial do campeonato ou na bilheteria do estádio.
+            Lembre-se de que os preços podem variar dependendo da categoria do
+            assento e do jogo.
+          </p>
+          <!-- Adicione mais informações conforme necessário -->
+        </div>
+
+        <!-- Redes Sociais e Atualizações -->
+        <div class="redes-sociais">
+          <h2>Redes Sociais e Atualizações</h2>
+          <p>
+            Siga-nos nas redes sociais para obter as últimas atualizações e
+            notícias do campeonato:
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/campeonato" target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/campeonato" target="_blank"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/campeonato" target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
     <footer>
-      <p>&copy; 2023 </p>
+      <p>&copy; 2023</p>
       <p>
         <a href="#">Política de Privacidade</a>
         <a href="#">Termos de Uso</a>
@@ -111,4 +113,6 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+
+  <script src="partidas.js"></script>
 </html>
