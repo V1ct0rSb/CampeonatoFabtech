@@ -539,18 +539,27 @@ footer a {
 /* ----------------------------Pagina de estatistica---------------------------- */
 /* Estilo das seções */
 .container-estatistica section {
+  max-width: 1200px;
+  margin: 20px auto; /* Centraliza o conteúdo horizontalmente */
   background-color: #fff;
-  margin: 20px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.container-estatistica h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
+  text-align: center;
 }
 
 /* Estilo das tabelas */
 .container-estatistica table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
 }
 
 .container-estatistica th,
@@ -580,9 +589,18 @@ footer a {
   max-width: 50px; /* Defina o tamanho máximo desejado */
   height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
 }
-/* Estilos para o gráfico de barras */
-#grafico-de-barras {
-  max-height: 600px;
-  margin: 0 auto;
-  display: block;
+
+/* Responsividade */
+@media (max-width: 767px) {
+  .container-estatistica {
+    margin: 10px; /* Reduz a margem para dispositivos menores */
+  }
+
+  .container-estatistica table {
+    font-size: 14px; /* Reduz o tamanho da fonte das tabelas para melhor legibilidade em telas pequenas */
+  }
+
+  .container-estatistica section img {
+    max-width: 30px; /* Reduz o tamanho máximo das imagens para dispositivos menores */
+  }
 }
