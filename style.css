@@ -8,13 +8,10 @@
 
 :root {
   --bg-box: #16181b;
-  --bg-main: #002e4c;
-  /* --bg-box: #1b1b1b; */
+  --bg-main: #142b59;
 
   --color-first: #aeff00;
   --color-second: white;
-
-  --hover-first: #00fd8f;
 }
 
 body {
@@ -56,7 +53,7 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 nav ul li a:hover {
-  color: var(--hover-first);
+  color: var(--color-first);
   text-decoration: underline;
   text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
   text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
@@ -67,7 +64,7 @@ nav ul li a:hover {
   font-size: 40px;
 }
 .bt-login a:hover {
-  color: var(--hover-first);
+  color: var(--color-first);
 }
 
 /* Responsividade header */
@@ -104,43 +101,46 @@ nav ul li a:hover {
 /* ----------------------------Parte Carrosel de Confrontos ----------------------------*/
 /* Estilos para o container do carrossel */
 .container {
-  width: 80%;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-  text-align: center; /* Centralizar o conteúdo horizontalmente */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilos para o carrossel */
 .carousel {
+  flex: 3;
   display: flex;
-  justify-content: center; /* Centralizar os cartões horizontalmente */
+  justify-content: center;
   transition: transform 0.5s ease-in-out;
   margin-top: 30px;
+  width: 100%; /* Defina a largura como 100% para ocupar a largura total do container */
 }
 
 .card-slider {
-  width: 1200px; /* Aumente o tamanho do cartão conforme necessário */
+  width: 100%; /* Usar 100% para tornar o design responsivo */
   background-color: var(--bg-box);
-  display: none; /* Inicialmente, todos os cartões estão ocultos */
+  display: none;
   text-align: center;
   border-radius: 10px;
-  padding: 20px 0px 20px 0px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  padding: 20px 0;
+  box-sizing: border-box; /* Evitar problemas com largura total */
+  border: 2px solid var(--color-first);
 }
 
 .card-slider.active {
-  display: block; /* Exibir o cartão ativo */
-}
-
-.card-slider.active .header-card-slider {
-  padding-bottom: 10px;
+  display: block;
 }
 
 .header-card-slider h2 {
   color: var(--color-first);
   font-size: 40px;
 }
+
 .header-card-slider p {
   color: var(--color-second);
   font-size: 20px;
@@ -151,6 +151,18 @@ nav ul li a:hover {
   justify-content: space-around;
 }
 
+.play01 p,
+.play02 p {
+  background: linear-gradient(to bottom, #591c21, #d92525);
+  color: var(--color-second);
+  font-size: 25px;
+  font-weight: bold;
+  border-top: 3px solid var(--color-first);
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .play01 img,
 .play02 img {
   max-width: 300px; /* Defina o tamanho máximo desejado */
@@ -159,53 +171,61 @@ nav ul li a:hover {
   border-top-left-radius: 10px;
 }
 
-.play01 p {
-  background: #a50044;
-  color: var(--color-second);
-  font-size: 25px;
-  font-weight: bold;
-
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top: 3px solid var(--color-first);
-}
-
-.play02 p {
-  background: #cb0f20;
-  color: var(--color-second);
-  font-size: 25px;
-  font-weight: bold;
-
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top: 3px solid var(--color-first);
-}
-
 .score-card-slider p {
   padding-top: 100px;
-  font-size: 40px;
+  font-size: 90px;
   color: var(--color-second);
 }
-/* Estilos para os botões de navegação */
+
 #prevButton,
 #nextButton {
-  margin-top: 10px;
-  padding: 5px 10px;
+  padding: 10px 20px; /* Aumente o padding para ajustar o tamanho dos botões */
   background-color: var(--color-first);
   color: var(--bg-box);
   border: 3px solid var(--color-first);
   cursor: pointer;
   font-weight: bold;
+  font-size: 30px; /* Aumente o tamanho da fonte */
+
+  height: 150px; /*Defina a altura desejada */
+}
+
+#nextButton {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #prevButton {
-  margin-right: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #prevButton:hover,
 #nextButton:hover {
   background-color: var(--color-second);
-  border: 3px solid var(--color-first);
+}
+
+/* Adicione uma media query para estilos específicos em telas menores */
+@media screen and (max-width: 768px) {
+  .carousel {
+    overflow-x: auto;
+    flex-wrap: nowrap; /* Impede que os cartões quebrem para a próxima linha */
+  }
+
+  #prevButton,
+  #nextButton {
+    padding: 5px 5px; /* Aumente o padding para ajustar o tamanho dos botões */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px; /* Aumente o tamanho da fonte */
+    height: 100px;
+  }
+
+  .play01 img,
+  .play02 img {
+    max-width: 200px; /* Defina o tamanho máximo desejado */
+    height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  }
 }
 
 /* ----------------------------Tela de Classificação----------------------------*/
@@ -229,6 +249,8 @@ nav ul li a:hover {
   font-size: 30px;
   padding: 15px 0px 25px 0px;
   text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
   text-align: left;
   color: var(--color-first);
 }
@@ -245,7 +267,7 @@ nav ul li a:hover {
 
 .container-class table {
   width: 100%;
-  /* padding-bottom: 50px; */
+  border-collapse: collapse;
 }
 
 .container-class th,
@@ -255,16 +277,18 @@ nav ul li a:hover {
 }
 
 .container-class th {
-  background-color: rgba(163, 163, 163, 0.728);
+  border: 1px solid white;
+  background-color: #5f5f65;
   color: white;
 }
 
 .container-class tr {
-  background-color: rgba(128, 128, 128, 0.728);
+  border: 1px solid white;
+  background-color: #343a40;
   color: rgb(255, 255, 255);
 }
 .container-class tr:hover {
-  background: rgba(163, 163, 163, 0.728);
+  background: #9ca3ab;
   color: var(--bg-black);
 }
 
@@ -314,7 +338,9 @@ nav ul li a:hover {
 
   /* Tornar a tabela responsiva */
   .container-class table {
-    font-size: 12px;
+    font-size: 12px; /* Reduz o tamanho da fonte das tabelas para melhor legibilidade em telas pequenas */
+    width: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
+    overflow-x: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
   }
 }
 
@@ -698,7 +724,7 @@ footer a {
 }
 
 .container-estatistica th {
-  background-color: #333;
+  background-color: #5f5f65;
   color: var(--color-second);
 }
 
@@ -712,6 +738,7 @@ footer a {
   text-align: center; /* Centraliza horizontalmente o texto dentro das células */
   vertical-align: middle; /* Centraliza verticalmente o conteúdo */
   color: var(--color-second);
+  background-color: #343a40;
 }
 
 .container-estatistica section img {
@@ -720,21 +747,36 @@ footer a {
 }
 
 /* Responsividade */
-@media (max-width: 767px) {
-  .container-estatistica {
-    margin: 10px; /* Reduz a margem para dispositivos menores */
+@media (max-width: 768px) {
+  .container-estatistica section {
+    margin: 10px 0; /* Remove margem nas laterais para economizar espaço */
+    padding: 10px; /* Reduz o preenchimento para economizar espaço */
+    box-shadow: none; /* Remova a sombra para simplificar */
+  }
+
+  .container-estatistica h2 {
+    font-size: 24px; /* Reduz o tamanho da fonte para melhor legibilidade em telas pequenas */
   }
 
   .container-estatistica table {
-    font-size: 14px; /* Reduz o tamanho da fonte das tabelas para melhor legibilidade em telas pequenas */
+    font-size: 12px; /* Reduz o tamanho da fonte das tabelas para melhor legibilidade em telas pequenas */
+    width: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
+    overflow-x: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
   }
 
-  .container-estatistica section img {
-    max-width: 30px; /* Reduz o tamanho máximo das imagens para dispositivos menores */
+  .container-estatistica td img {
+    max-width: 50px; /* Defina o tamanho máximo desejado */
+    height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  }
+
+  /* Ajusta o layout das tabelas para economizar espaço horizontal */
+  .container-estatistica th,
+  .container-estatistica td {
+    padding: 5px;
   }
 }
 
-/* Função de subir para o topo*/
+/* ----------------------------Função de subir para o topo----------------------------*/
 #topButton {
   display: none;
   position: fixed;
