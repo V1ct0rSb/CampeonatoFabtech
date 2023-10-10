@@ -361,7 +361,7 @@ nav ul li a:hover {
 /* ----------------------------Tela de Login----------------------------*/
 .container-login {
   width: 60%;
-  margin: 61.5px auto;
+  margin: 61px auto;
   display: flex;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
@@ -371,13 +371,10 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--color-first); */
-  /* padding: 10px 0px 10px 0px; */
 }
 
 .form-image img {
   width: 100%;
-  /* border: 1px solid var(--color-first); */
 }
 
 .form {
@@ -600,6 +597,13 @@ footer a {
   margin: 0 10px;
 }
 
+footer a:hover {
+  color: var(--color-first);
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
+}
+
 /* ----------------------------Tela de Partidas----------------------------*/
 /* Estilo para o container principal */
 .container-box {
@@ -623,14 +627,14 @@ footer a {
 /* Estilo para o título do campeonato */
 .container-box .titulo-campeonato {
   text-align: center;
-  font-size: 24px;
+  font-size: 40px;
   margin-top: 10px;
   color: var(--color-first);
 }
 
-/* Estilo para os títulos das fases do campeonato */
+/* Estilo para os títulos das Rodadas*/
 .container-box h2 {
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 20px;
   border-bottom: 2px solid #ccc;
   color: var(--color-first);
@@ -678,28 +682,46 @@ footer a {
 }
 
 /* Estilo para a seção de redes sociais */
-.container-box .redes-sociais {
-  margin-top: 40px;
+.redes-sociais {
+  text-align: left;
+  color: #fff; /* Cor do texto */
 }
 
-.container-box .redes-sociais ul {
+/* Estilizando o título */
+.redes-sociais h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilizando o parágrafo de descrição */
+.redes-sociais p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Estilizando a lista de ícones */
+.redes-sociais ul {
   list-style: none;
   padding: 0;
 }
 
-.container-box .redes-sociais ul li {
-  margin-bottom: 10px;
+/* Estilizando cada ícone de rede social */
+.redes-sociais li {
+  display: inline-block;
+  margin: 0 10px; /* Espaçamento entre os ícones */
 }
 
-.container-box .redes-sociais a {
+/* Estilizando os ícones (substitua "ion-icon" pelo nome da classe real) */
+.redes-sociais a ion-icon {
+  font-size: 36px;
+  color: #fff; /* Cor do ícone */
   text-decoration: none;
-  color: #007bff;
 }
 
-.container-box .redes-sociais a:hover {
-  text-decoration: underline;
+/* Estilizando os ícones ao passar o mouse sobre eles */
+.redes-sociais a ion-icon:hover {
+  color: var(--color-first); /* Cor diferente ao passar o mouse */
 }
-
 #rodada-select {
   margin-top: 10px;
   padding: 5px;
