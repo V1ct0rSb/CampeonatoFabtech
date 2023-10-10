@@ -32,58 +32,50 @@
     </header>
 
     <main>
-      <div class="custom-body">
-        <div class="login-container">
-          <h2>Tela de Login</h2>
-
-          <section>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              required
-              placeholder="Email"
-            />
-          </section>
-
-          <section>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              required
-              placeholder="Senha"
-            />
-          </section>
-
-          <button type="submit">Entrar</button>
-
-          <div class="forgot-password">
-            <a href="#">Esqueceu a senha?</a>
-          </div>
-
-          <div class="social-buttons">
-            <button class="google">
-              <a
-                href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=AYZoVhfEIxlrzgl9Prao7Az5wrVEbjhQhfIGkA6ok8sQ7MPpzJpbEBzn8jZnLyID39aGWR6VHEmG&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-                ><ion-icon name="logo-google"></ion-icon
-              ></a>
-            </button>
-            <button class="facebook">
-              <a
-                href="https://www.facebook.com/?stype=lo&deoia=1&jlou=AfetQBroyLmKtvE9wINfzqv72fypKMJiTGXLt7cUNDoOgh79EI97lA6xT2Kry7HheQRhW-Ym5bI1TLrAI8szXbCMWw5WzxEru5H_aRS3hPuN5Q&smuh=36741&lh=Ac-IAwfNweI8-JNTAz4"
-                ><ion-icon name="logo-facebook"></ion-icon
-              ></a>
-            </button>
-          </div>
+      <div class="container-login">
+        <div class="form-image">
+          <img src="assets/img/imgLogin.png" alt="" />
         </div>
-        <!--login-container-->
+        <div class="form">
+          <form action="#">
+            <div class="form-header">
+              <div class="title">
+                <h2>Login</h2>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="password">Senha</label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="Digite sua senha"
+                required
+              />
+            </div>
+
+            <div class="continue-button">
+              <button><a href="#">Entrar</a></button>
+            </div>
+          </form>
+        </div>
       </div>
-      <!--custom-body-->
     </main>
 
     <footer>
-      <p>&copy; 2023 </p>
+      <p>&copy; 2023</p>
       <p>
         <a href="#">Política de Privacidade</a>
         <a href="#">Termos de Uso</a>

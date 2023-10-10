@@ -1,24 +1,24 @@
 const jogosDaRodada1 = [
     {
       horario: "16:00",
-      timeMandante: "Fluminense",
-      timeVisitante: "Botafogo",
+      timeMandante: "Flamengo",
+      timeVisitante: "Flamengo",
       arbitro: "Anderson Daronco",
       data: "01/10/2023",
       arena: "Maracanã",
     },
     {
       horario: "18:30",
-      timeMandante: "São Paulo",
-      timeVisitante: "Corinthians",
+      timeMandante: "Internacional",
+      timeVisitante: "Internacional",
       arbitro: "Wilmar Roldán",
       data: "02/10/2023",
       arena: "Morumbi",
     },
     {
       horario: "15:00",
-      timeMandante: "Atlético Mineiro",
-      timeVisitante: "Cruzeiro",
+      timeMandante: "Internacional",
+      timeVisitante: "Internacional",
       arbitro: "Ricardo Marques Ribeiro",
       data: "03/10/2023",
       arena: "Mineirão",
@@ -29,15 +29,15 @@ const jogosDaRodada1 = [
   const jogosDaRodada2 = [
     {
       horario: "16:00",
-      timeMandante: "Palmeiras",
-      timeVisitante: "Santos",
+      timeMandante: "Internacional",
+      timeVisitante: "Internacional",
       arbitro: "Leandro Pedro Vuaden",
       data: "08/10/2023",
       arena: "Allianz Parque",
     },
     {
       horario: "19:00",
-      timeMandante: "Grêmio",
+      timeMandante: "Internacional",
       timeVisitante: "Internacional",
       arbitro: "Braulio Machado",
       data: "09/10/2023",
@@ -45,7 +45,7 @@ const jogosDaRodada1 = [
     },
     {
       horario: "17:30",
-      timeMandante: "Vasco da Gama",
+      timeMandante: "Internacional",
       timeVisitante: "Flamengo",
       arbitro: "Wilton Pereira Sampaio",
       data: "10/10/2023",

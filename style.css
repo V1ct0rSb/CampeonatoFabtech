@@ -25,10 +25,11 @@ header {
   background-color: var(--bg-box);
   padding: 15px 0;
   border-bottom: 2px solid var(--color-first);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .logo a img {
@@ -106,6 +107,7 @@ nav ul li a:hover {
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,23 +115,24 @@ nav ul li a:hover {
 
 /* Estilos para o carrossel */
 .carousel {
-  flex: 3;
+  width: 100%; /* Defina a largura como 100% para ocupar a largura total do container */
+  margin-top: 30px;
+  transition: transform 0.5s ease-in-out;
+
   display: flex;
   justify-content: center;
-  transition: transform 0.5s ease-in-out;
-  margin-top: 30px;
-  width: 100%; /* Defina a largura como 100% para ocupar a largura total do container */
+  flex: 3;
 }
 
 .card-slider {
-  width: 100%; /* Usar 100% para tornar o design responsivo */
   background-color: var(--bg-box);
+  width: 100%; /* Usar 100% para tornar o design responsivo */
   display: none;
   text-align: center;
-  border-radius: 10px;
   padding: 20px 0;
   box-sizing: border-box; /* Evitar problemas com largura total */
   border: 2px solid var(--color-first);
+  border-radius: 10px;
 }
 
 .card-slider.active {
@@ -157,8 +160,8 @@ nav ul li a:hover {
   color: var(--color-second);
   font-size: 25px;
   font-weight: bold;
-  border-top: 3px solid var(--color-first);
   padding: 5px;
+  border-top: 3px solid var(--color-first);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -179,15 +182,14 @@ nav ul li a:hover {
 
 #prevButton,
 #nextButton {
-  padding: 10px 20px; /* Aumente o padding para ajustar o tamanho dos botões */
   background-color: var(--color-first);
   color: var(--bg-box);
+  height: 150px; /*Defina a altura desejada */
   border: 3px solid var(--color-first);
+  padding: 10px 20px; /* Aumente o padding para ajustar o tamanho dos botões */
   cursor: pointer;
   font-weight: bold;
   font-size: 30px; /* Aumente o tamanho da fonte */
-
-  height: 150px; /*Defina a altura desejada */
 }
 
 #nextButton {
@@ -240,25 +242,25 @@ nav ul li a:hover {
 }
 
 .container-class h2 {
+  color: var(--color-first);
   font-size: 40px;
   padding: 15px 0px 30px 0px;
-  color: var(--color-first);
 }
 
 .container-class h3 {
+  color: var(--color-first);
   font-size: 30px;
   padding: 15px 0px 25px 0px;
   text-decoration: underline;
   text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
   text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
   text-align: left;
-  color: var(--color-first);
 }
 
 .container-class h4 {
+  color: var(--color-first);
   font-size: 25px;
   padding: 15px 0px 20px 0px;
-  color: var(--color-first);
 }
 
 .container-class .grupo {
@@ -277,15 +279,15 @@ nav ul li a:hover {
 }
 
 .container-class th {
-  border: 1px solid white;
   background-color: #5f5f65;
   color: white;
+  border: 1px solid white;
 }
 
 .container-class tr {
+  color: rgb(255, 255, 255);
   border: 1px solid white;
   background-color: #343a40;
-  color: rgb(255, 255, 255);
 }
 .container-class tr:hover {
   background: #9ca3ab;
@@ -345,124 +347,129 @@ nav ul li a:hover {
 }
 
 /* ----------------------------Tela de Login----------------------------*/
-/* Estilo para o container de login */
-.login-container {
-  background-color: #16181bb9;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  width: 400px;
-  text-align: center;
+.container-login {
+  width: 60%;
+  margin: 61.5px auto;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
-/* Estilo para o título "Tela de Login" */
-.login-container h2 {
-  font-size: 24px;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  color: white;
-  font-size: 30px;
-}
-
-/* Estilo para as seções de usuário e senha */
-.login-container section {
-  margin-bottom: 20px;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
-
-/* Estilo para os campos de entrada de texto */
-.login-container input[type="text"],
-.login-container input[type="password"] {
-  width: 90%;
-  padding: 15px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-  text-align: center;
-  font-size: 18px;
-}
-
-.login-container input:hover {
-  border: 2px solid #007bff;
-  background-color: rgb(199, 199, 199);
-}
-
-.login-container input:focus {
-  background: rgb(222, 222, 222);
-  color: black;
-}
-
-/* Estilo para o botão de entrada */
-.login-container button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.2s;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.login-container button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-/* Estilo para o link "Esqueceu a senha?" */
-.forgot-password a {
-  text-decoration: none;
-  color: #007bff;
-}
-.forgot-password a:hover {
-  text-decoration: underline;
-  color: rgb(205, 205, 205);
-}
-
-/* Estilo para os botões de login social */
-.social-buttons {
-  margin-top: 20px;
-}
-
-.social-buttons button {
-  border-radius: 5px;
-  width: 40px;
-  height: 40px;
-}
-
-/* Estilo para os ícones nas redes sociais */
-.social-buttons ion-icon {
-  font-size: 30px;
-  color: black;
-}
-
-/* Estilo para os botões de login social específicos */
-.custom-body {
+.form-image {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: url("https://media.istockphoto.com/id/545356586/pt/foto/estádio-de-futebol-de-futebol-com-projectores.jpg?s=612x612&w=0&k=20&c=gAOC_MmTL0-2PuLZH_Vv7jyl4t4tqIe1xCDZBu4s1VU=");
-  background-size: cover; /* Para cobrir toda a tela */
-  background-position: center; /* Centralize a imagem */
+  /* background-color: var(--color-first); */
+  /* padding: 10px 0px 10px 0px; */
+}
+
+.form-image img {
+  width: 100%;
+  /* border: 1px solid var(--color-first); */
+}
+
+.form {
+  border-left: 3px solid var(--color-first);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-box);
+  padding: 48px;
+}
+
+.form-header {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-header .title h2 {
+  color: var(--color-first);
+  font-size: 45px;
+}
+
+.form-header h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background-color: white;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.input-box input {
+  margin: 10px 0;
+  padding: 13px 80px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--color-second);
+}
+.input-box input:hover {
+  background: rgb(205, 205, 205);
+  border: 2px solid var(--color-first);
+}
+
+.input-box label {
+  font-size: 18px;
+  font-weight: bolder;
+  color: var(--color-second);
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+.continue-button button {
+  width: 50%;
+  margin-top: 40px;
+  border: none;
+  background-color: var(--color-first);
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 3px solid var(--color-first);
+}
+.continue-button button:hover {
+  background-color: var(--color-second);
+  border: 3px solid var(--color-first);
+  box-shadow: 0 0 25px var(--color-first);
+}
+
+.continue-button button a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  color: var(--bg-box);
 }
 
 /*----------------------------Tela de Mídia----------------------------*/
 /* Estilos para a seção da notícia */
 .midia {
+  max-width: 1200px;
+  margin: 30px auto;
+
+  background-color: var(--bg-box);
+
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
-  background-color: var(--bg-box);
+
+  border: 2px solid var(--color-first);
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   overflow: hidden;
-  margin-bottom: 20px;
-  margin-top: 50px;
 }
 
 .video-container {
@@ -523,16 +530,20 @@ nav ul li a:hover {
 
 /* ----------------------------Tela de Noticia----------------------------*/
 .noticia {
+  width: 1200px;
+  margin: 30px auto;
   padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--bg-box);
+  border: 2px solid var(--color-first);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .noticia h2 {
+  color: var(--color-first);
   font-size: 30px;
-  margin: 10px;
   text-align: center;
+  margin: 10px;
   margin-bottom: 30px;
 }
 
@@ -554,6 +565,7 @@ nav ul li a:hover {
 .descricao p {
   font-size: 18px;
   text-align: justify;
+  color: var(--color-second);
 }
 
 /* ----------------------------FOOTER---------------------------- */
@@ -628,10 +640,11 @@ footer a {
 
 .container-box .tabela td {
   color: var(--color-second);
+  background-color: #343a40;
 }
 
 .container-box .tabela th {
-  background-color: #333;
+  background-color: #5f5f65;
   color: #fff;
 }
 
@@ -697,17 +710,18 @@ footer a {
   background-color: var(--bg-box);
   padding: 20px;
   border-radius: 5px;
+  border: 2px solid var(--color-first);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .container-estatistica h2 {
-  margin-bottom: 20px;
+  color: var(--color-first);
+  margin-bottom: 35px;
   font-size: 30px;
   text-decoration: underline;
   text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
   text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
   text-align: center;
-  color: var(--color-first);
 }
 
 /* Estilo das tabelas */
