@@ -19,6 +19,18 @@ body {
   background-color: var(--bg-main);
 }
 
+/* Barras de rolagem */
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--bg-box); /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-first); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
 /* ----------------------------Parte do Header---------------------------- */
 /* Header */
 header {
