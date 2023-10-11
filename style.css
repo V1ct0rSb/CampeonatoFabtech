@@ -289,6 +289,81 @@ nav ul li a:hover {
   transform: scale(1.2);
 }
 
+/* ---------Noticias da Home--------- */
+.news-container {
+  margin: 30px auto 30px auto;
+  background: var(--bg-box);
+  max-width: 1200px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 2px solid var(--color-first);
+}
+
+.news-container h2 {
+  text-align: center;
+  font-size: 30px;
+  color: var(--color-first);
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
+}
+
+.new {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news-item {
+  background-color: var(--bg-box);
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+}
+
+.news-item img {
+  max-width: 250px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  border-radius: 10px;
+}
+.news-item a {
+  color: var(--color-second);
+  text-decoration: none;
+}
+
+.news-item a p {
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bolder;
+  line-height: 22px;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#news-link {
+  text-decoration: none;
+  border: 2px solid var(--color-first);
+  background-color: var(--color-first);
+  color: var(--bg-box);
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#news-link:hover {
+  background-color: var(--color-second);
+  border: 3px solid var(--color-first);
+  box-shadow: 0 0 25px var(--color-first);
+}
+
 /* ----------------------------Tela de Classificação----------------------------*/
 .container-class {
   width: 100%;
