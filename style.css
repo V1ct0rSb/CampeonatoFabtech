@@ -484,7 +484,7 @@ nav ul li a:hover {
 .container-login {
   width: 100%;
   display: flex;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212); */
 }
 
 .form-image {
@@ -585,6 +585,25 @@ nav ul li a:hover {
   color: var(--bg-box);
 }
 
+.password-input {
+  display: flex;
+  align-items: center;
+}
+
+.password-input input {
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--color-second);
+}
+
+.password-input ion-icon {
+  margin-left: -40px; /* Ajuste o valor conforme necessário para alinhar o ícone adequadamente */
+  cursor: pointer;
+}
 /*----------------------------Tela de Mídia----------------------------*/
 /* Estilos para a seção da notícia */
 .midia {

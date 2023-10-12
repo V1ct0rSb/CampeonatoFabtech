@@ -60,13 +60,16 @@
             </div>
             <div class="input-box">
               <label for="password">Senha</label>
-              <input
-                id="password"
-                type="password"
-                name="password"
-                placeholder="Digite sua senha"
-                required
-              />
+              <div class="password-input">
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Digite sua senha"
+                  required
+                />
+                <ion-icon name="eye-outline" class="toggle-password"></ion-icon>
+              </div>
             </div>
             <!-- Botão de entrada -->
             <div class="continue-button">
@@ -86,6 +89,8 @@
       </p>
     </footer>
   </body>
+  
+  <!-- icons  -->
   <script
     type="module"
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -94,4 +99,6 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+  <!-- Mostrar Senha -->
+  <script src="login.js"></script>
 </html>
