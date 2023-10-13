@@ -219,6 +219,37 @@ nav ul li a:hover {
   background-color: var(--color-second);
 }
 
+.tabelas-home {
+  /* display: block; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* justify-content: center; */
+  border: 2px solid var(--color-first);
+  border-radius: 10px;
+  border-collapse: collapse;
+  /* width: 100%; */
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 30px auto;
+  color: #FFFFFF;
+}
+
+.tabelas-home h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-classificacao {
+  /* max-width: 800px; */
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.home-classificacao table tr td, .home-classificacao table tr th {
+  padding: 10px;
+}
+
 /* Adicione uma media query para estilos específicos em telas menores */
 @media screen and (max-width: 768px) {
   .carousel {
