@@ -395,6 +395,62 @@ nav ul li a:hover {
   box-shadow: 0 0 25px var(--color-first);
 }
 
+/* ----------------------------Top 3 Artilheiros da Home----------------------------*/
+
+
+.container-top {
+  background-color: var(--bg-box);
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 50px;
+  border: 2px solid var(--color-first);
+  border-radius: 10px;
+}
+
+.txt {
+  font-size: 30px;
+  color: var(--color-first);
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.container-artilheiro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 90px;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.box-arti {
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  box-shadow: 0 5px 15px;
+  background-color: var(--bg-main);
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box-arti img {
+  max-height: 100%;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  background-color: white;
+}
+
+.box-arti h2 {
+  padding: 30px 0px 10px 0px;
+  font-size: 30px;
+  color: black;
+}
+
+
 /* ----------------------------Tela de Classificação----------------------------*/
 .container-class {
   width: 100%;
