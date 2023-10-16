@@ -37,7 +37,6 @@ header {
   background-color: var(--bg-box);
   padding: 15px 0;
   border-bottom: 2px solid var(--color-first);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
   display: flex;
   justify-content: space-around;
@@ -219,37 +218,6 @@ nav ul li a:hover {
   background-color: var(--color-second);
 }
 
-.tabelas-home {
-  /* display: block; */
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
-  /* justify-content: center; */
-  border: 2px solid var(--color-first);
-  border-radius: 10px;
-  border-collapse: collapse;
-  /* width: 100%; */
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: 30px auto;
-  color: #FFFFFF;
-}
-
-.tabelas-home h2 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.home-classificacao {
-  /* max-width: 800px; */
-  margin: auto;
-  padding: 30px;
-  text-align: center;
-}
-
-.home-classificacao table tr td, .home-classificacao table tr th {
-  padding: 10px;
-}
-
 /* Adicione uma media query para estilos específicos em telas menores */
 @media screen and (max-width: 768px) {
   .carousel {
@@ -273,6 +241,41 @@ nav ul li a:hover {
   }
 }
 
+/*---------------- tabela de classificação--------- */
+.tabelas-home {
+  /* display: block; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* justify-content: center; */
+  /* width: 100%; */
+  border: 2px solid var(--color-first);
+  border-radius: 10px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 30px auto;
+  box-shadow: 0 5px 15px;
+}
+
+.tabelas-home h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.home-classificacao {
+  color: #ffffff;
+  /* max-width: 800px; */
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.home-classificacao table tr td,
+.home-classificacao table tr th {
+  padding: 10px;
+}
+
 /* --------Times Particpantes----- */
 .container-times {
   background-color: var(--bg-box);
@@ -281,6 +284,7 @@ nav ul li a:hover {
   padding: 50px;
   border: 2px solid var(--color-first);
   border-radius: 10px;
+  box-shadow: 0 5px 15px;
 }
 
 .container-times h2 {
@@ -328,6 +332,7 @@ nav ul li a:hover {
   padding: 40px;
   border-radius: 10px;
   border: 2px solid var(--color-first);
+  box-shadow: 0 5px 15px;
 }
 
 .news-container h2 {
@@ -397,7 +402,6 @@ nav ul li a:hover {
 
 /* ----------------------------Top 3 Artilheiros da Home----------------------------*/
 
-
 .container-top {
   background-color: var(--bg-box);
   max-width: 1200px;
@@ -405,16 +409,17 @@ nav ul li a:hover {
   padding: 50px;
   border: 2px solid var(--color-first);
   border-radius: 10px;
+  box-shadow: 0 5px 15px;
 }
 
 .txt {
   font-size: 30px;
   color: var(--color-first);
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
 }
 
 .container-artilheiro {
@@ -423,33 +428,30 @@ nav ul li a:hover {
   justify-content: center;
   gap: 90px;
   text-align: center;
-  margin-top: 90px;
 }
 
 .box-arti {
   width: 200px;
-  height: 300px;
   text-align: center;
   box-shadow: 0 5px 15px;
   background-color: var(--bg-main);
   margin: 0;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .box-arti img {
   max-height: 100%;
   border-radius: 10px 10px 0px 0px;
+  border-bottom: 3px solid var(--color-first);
   width: 100%;
   background-color: white;
 }
 
 .box-arti h2 {
-  padding: 30px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
   font-size: 30px;
-  color: black;
+  color: var(--color-first);
 }
-
 
 /* ----------------------------Tela de Classificação----------------------------*/
 .container-class {
@@ -460,6 +462,8 @@ nav ul li a:hover {
   text-align: center;
   background: var(--bg-box);
   border-radius: 10px;
+  box-shadow: 0 5px 15px;
+  border: 2px solid var(--color-first);
 }
 
 .container-class h2 {
@@ -571,7 +575,6 @@ nav ul li a:hover {
 .container-login {
   width: 100%;
   display: flex;
-  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212); */
 }
 
 .form-image {
@@ -691,6 +694,32 @@ nav ul li a:hover {
   margin-left: -40px; /* Ajuste o valor conforme necessário para alinhar o ícone adequadamente */
   cursor: pointer;
 }
+
+/* Estilizando a lista de ícones */
+.sociais-rede ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-right: 255px;
+}
+
+/* Estilizando cada ícone de rede social */
+.sociais-rede li {
+  display: inline-block;
+  margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+/* Estilizando os ícones (substitua "ion-icon" pelo nome da classe real) */
+.sociais-rede a ion-icon {
+  font-size: 40px;
+  color: #fff; /* Cor do ícone */
+  text-decoration: none;
+}
+
+/* Estilizando os ícones ao passar o mouse sobre eles */
+.sociais-rede a ion-icon:hover {
+  color: var(--color-first); /* Cor diferente ao passar o mouse */
+}
 /*----------------------------Tela de Mídia----------------------------*/
 /* Estilos para a seção da notícia */
 .midia {
@@ -703,8 +732,8 @@ nav ul li a:hover {
   flex-wrap: wrap;
 
   border: 2px solid var(--color-first);
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px;
   overflow: hidden;
 }
 
@@ -771,7 +800,7 @@ nav ul li a:hover {
   padding: 20px;
   background-color: var(--bg-box);
   border: 2px solid var(--color-first);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px;
   border-radius: 10px;
 }
 
@@ -837,8 +866,9 @@ footer a:hover {
   margin: 30px auto;
   padding: 20px;
   background-color: var(--bg-box);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  box-shadow: 0 5px 15px;
+  border-radius: 10px;
+  border: 2px solid var(--color-first);
 }
 
 /* Estilo para o logotipo da liga */
@@ -969,9 +999,9 @@ footer a:hover {
   margin: 30px auto; /* Centraliza o conteúdo horizontalmente */
   background-color: var(--bg-box);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid var(--color-first);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: 0 5px 15px;
 }
 
 .container-estatistica h2 {
