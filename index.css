@@ -131,38 +131,91 @@
 }
 
 /*---------------- tabela de classificação--------- */
-.tabelas-home {
-  /* display: block; */
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
-  /* justify-content: center; */
-  /* width: 100%; */
-  border: 2px solid var(--color-first);
-  border-radius: 10px;
-  border-collapse: collapse;
-  box-sizing: border-box;
+.container-class {
+  width: 100%;
   max-width: 1200px;
   margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  background: var(--bg-box);
+  border-radius: 10px;
   box-shadow: 0 5px 15px;
+  border: 2px solid var(--color-first);
+  background: var(--bg-box);
 }
 
-.tabelas-home h2 {
+.container-class h2 {
+  color: var(--color-first);
+  font-size: 30px;
+  padding: 15px 0px 30px 0px;
   text-align: center;
-  margin-top: 20px;
-  color: #ffffff;
 }
 
-.home-classificacao {
-  color: #ffffff;
-  /* max-width: 800px; */
+.container-class h3 {
+  color: var(--color-first);
+  font-size: 30px;
+  padding: 15px 0px 25px 0px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
+  text-align: left;
+}
+
+.container-class h4 {
+  color: var(--color-first);
+  font-size: 25px;
+  padding: 15px 0px 20px 0px;
+}
+
+.container-class .grupo {
+  padding-bottom: 50px;
+}
+
+.container-class table {
+  max-width: 1200px;
   margin: auto;
-  padding: 30px;
+  border-collapse: collapse;
+}
+
+.container-class th,
+.container-class td {
+  padding: 10px;
   text-align: center;
 }
 
-.home-classificacao table tr td,
-.home-classificacao table tr th {
-  padding: 10px;
+.container-class th {
+  background-color: #5f5f65;
+  color: white;
+  border: 1px solid white;
+}
+
+.container-class tr {
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  background-color: #343a40;
+}
+.container-class tr:hover {
+  background: #9ca3ab;
+  color: var(--bg-black);
+}
+
+.alinhar-time {
+  display: flex;
+  align-items: center;
+}
+
+.alinhar-time img {
+  max-width: 50px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  margin-right: 15px;
+}
+
+.primeiros {
+  border-left: 3px solid rgb(1, 255, 1);
+}
+
+.ultimo {
+  border-left: 3px solid red;
 }
 
 /* --------Times Particpantes----- */

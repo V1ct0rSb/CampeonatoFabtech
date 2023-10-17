@@ -38,7 +38,8 @@
 }
 
 .container-class table {
-  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   border-collapse: collapse;
 }
 
@@ -85,8 +86,8 @@
 
 /* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
-  .container-class {
-    padding: 10px;
+  .container-class table {
+    max-width: 90%;
   }
 
   .container-class h2 {
