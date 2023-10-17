@@ -1,0 +1,87 @@
+/* ----------------------------Pagina de estatistica---------------------------- */
+/* Estilo das seções */
+.container-estatistica section {
+  max-width: 1200px;
+  margin: 30px auto; /* Centraliza o conteúdo horizontalmente */
+  background-color: var(--bg-box);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--color-first);
+  box-shadow: 0 5px 15px;
+}
+
+.container-estatistica h2 {
+  color: var(--color-first);
+  margin-bottom: 35px;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
+  text-align: center;
+}
+
+/* Estilo das tabelas */
+.container-estatistica table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container-estatistica th,
+.container-estatistica td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.container-estatistica th {
+  background-color: #5f5f65;
+  color: var(--color-second);
+}
+
+/* Estilos para as células que contêm imagens e logotipos */
+.container-estatistica td img {
+  display: block;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.container-estatistica td {
+  text-align: center; /* Centraliza horizontalmente o texto dentro das células */
+  vertical-align: middle; /* Centraliza verticalmente o conteúdo */
+  color: var(--color-second);
+  background-color: #343a40;
+}
+
+.container-estatistica section img {
+  max-width: 50px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-estatistica section {
+    margin: 10px 0; /* Remove margem nas laterais para economizar espaço */
+    padding: 10px; /* Reduz o preenchimento para economizar espaço */
+    box-shadow: none; /* Remova a sombra para simplificar */
+  }
+
+  .container-estatistica h2 {
+    font-size: 24px; /* Reduz o tamanho da fonte para melhor legibilidade em telas pequenas */
+  }
+
+  .container-estatistica table {
+    font-size: 12px; /* Reduz o tamanho da fonte das tabelas para melhor legibilidade em telas pequenas */
+    width: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
+    overflow-x: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
+  }
+
+  .container-estatistica td img {
+    max-width: 50px; /* Defina o tamanho máximo desejado */
+    height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  }
+
+  /* Ajusta o layout das tabelas para economizar espaço horizontal */
+  .container-estatistica th,
+  .container-estatistica td {
+    padding: 5px;
+  }
+}

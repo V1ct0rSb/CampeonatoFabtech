@@ -1,0 +1,133 @@
+
+/* ----------------------------Tela de Partidas----------------------------*/
+/* Estilo para o container principal */
+.container-box {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--bg-box);
+  box-shadow: 0 5px 15px;
+  border-radius: 10px;
+  border: 2px solid var(--color-first);
+}
+
+/* Estilo para o logotipo da liga */
+.container-box .logo {
+  max-width: 400px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  display: block; /* Adicione esta linha para centralizar horizontalmente */
+  margin: 0 auto; /* Adicione esta linha para centralizar horizontalmente */
+  border-radius: 10%;
+}
+
+/* Estilo para o título do campeonato */
+.container-box .titulo-campeonato {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  color: var(--color-first);
+}
+
+/* Estilo para os títulos das Rodadas*/
+.container-box h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  border-bottom: 2px solid #ccc;
+  color: var(--color-first);
+}
+
+/* Estilo para as tabelas de partidas */
+.container-box .tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.container-box .tabela th,
+.container-box .tabela td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.container-box .tabela td {
+  color: var(--color-second);
+  background-color: #343a40;
+}
+
+.container-box .tabela th {
+  background-color: #5f5f65;
+  color: #fff;
+}
+
+.info-torcedores p {
+  margin-top: 10px;
+  color: var(--color-second);
+}
+
+/* Estilo para os nomes dos times */
+.container-box .logo-time {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Estilo para a seção de informações para torcedores */
+.container-box .info-torcedores {
+  margin-top: 40px;
+}
+
+/* Estilo para a seção de redes sociais */
+.redes-sociais {
+  text-align: left;
+  color: #fff; /* Cor do texto */
+}
+
+/* Estilizando o título */
+.redes-sociais h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilizando o parágrafo de descrição */
+.redes-sociais p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Estilizando a lista de ícones */
+.redes-sociais ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilizando cada ícone de rede social */
+.redes-sociais li {
+  display: inline-block;
+  margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+/* Estilizando os ícones (substitua "ion-icon" pelo nome da classe real) */
+.redes-sociais a ion-icon {
+  font-size: 36px;
+  color: #fff; /* Cor do ícone */
+  text-decoration: none;
+}
+
+/* Estilizando os ícones ao passar o mouse sobre eles */
+.redes-sociais a ion-icon:hover {
+  color: var(--color-first); /* Cor diferente ao passar o mouse */
+}
+#rodada-select {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+#rodada-select:hover {
+  background-color: #ccc;
+}

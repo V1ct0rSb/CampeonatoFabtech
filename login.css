@@ -1,0 +1,149 @@
+/* ----------------------------Tela de Login----------------------------*/
+.container-login {
+  width: 100%;
+  display: flex;
+}
+
+.form-image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-image img {
+  width: 100%;
+}
+
+.form {
+  border-left: 3px solid var(--color-first);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-box);
+  padding: 48px;
+}
+
+.form-header {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-header .title h2 {
+  color: var(--color-first);
+  font-size: 45px;
+}
+
+.form-header h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background-color: white;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.input-box input {
+  margin: 10px 0;
+  padding: 13px 80px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--color-second);
+}
+.input-box input:hover {
+  background: rgb(205, 205, 205);
+  border: 2px solid var(--color-first);
+}
+
+.input-box label {
+  font-size: 18px;
+  font-weight: bolder;
+  color: var(--color-second);
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+.continue-button button {
+  width: 50%;
+  margin-top: 40px;
+  border: none;
+  background-color: var(--color-first);
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 3px solid var(--color-first);
+}
+.continue-button button:hover {
+  background-color: var(--color-second);
+  border: 3px solid var(--color-first);
+  box-shadow: 0 0 25px var(--color-first);
+}
+
+.continue-button button a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  color: var(--bg-box);
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+}
+
+.password-input input {
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--color-second);
+}
+
+.password-input ion-icon {
+  margin-left: -40px; /* Ajuste o valor conforme necessário para alinhar o ícone adequadamente */
+  cursor: pointer;
+}
+
+/* Estilizando a lista de ícones */
+.sociais-rede ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-right: 255px;
+}
+
+/* Estilizando cada ícone de rede social */
+.sociais-rede li {
+  display: inline-block;
+  margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+/* Estilizando os ícones (substitua "ion-icon" pelo nome da classe real) */
+.sociais-rede a ion-icon {
+  font-size: 40px;
+  color: #fff; /* Cor do ícone */
+  text-decoration: none;
+}
+
+/* Estilizando os ícones ao passar o mouse sobre eles */
+.sociais-rede a ion-icon:hover {
+  color: var(--color-first); /* Cor diferente ao passar o mouse */
+}

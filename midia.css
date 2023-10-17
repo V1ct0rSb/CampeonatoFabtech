@@ -1,0 +1,98 @@
+/* ----------------------------FOOTER---------------------------- */
+footer {
+  background-color: var(--bg-box);
+  color: var(--color-second);
+  padding: 20px 0;
+  text-align: center;
+  border-top: 2px solid var(--color-first);
+}
+
+footer p {
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: var(--color-first);
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
+}
+
+/*----------------------------Tela de Mídia----------------------------*/
+/* Estilos para a seção da notícia */
+.midia {
+  max-width: 1200px;
+  margin: 30px auto;
+
+  background-color: var(--bg-box);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  border: 2px solid var(--color-first);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px;
+  overflow: hidden;
+}
+
+.video-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.texto {
+  flex: 1;
+  padding: 20px;
+  text-align: center; /* Centralize o conteúdo */
+}
+
+.texto h2 {
+  font-size: 24px;
+  color: var(--color-first);
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 16px;
+  color: var(--color-second);
+  margin-bottom: 20px;
+  line-height: 25px;
+  text-align: justify;
+  text-indent: 20px; /* Paragrafo no texto */
+}
+
+.leia {
+  background-color: var(--color-first);
+  color: var(--bg-box);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: 3px solid var(--color-first);
+}
+
+.leia a {
+  color: var(--bg-box);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.leia:hover {
+  background-color: var(--color-second);
+  border: 3px solid var(--color-first);
+  box-shadow: 0 0 25px var(--color-first);
+}
+
+/* Estilos para o vídeo incorporado */
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+}
