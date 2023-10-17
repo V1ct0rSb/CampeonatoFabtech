@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bem vindo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="welcome.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="partidas.html">Partidas</a></li>
+          <li><a href="classificacao.html">Classificação</a></li>
+          <li><a href="estatistica.html">Estatísticas</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+        </ul>
+      </nav>
+      <div class="bt-login">
+        <a href="login.html">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="icon">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+        <h1>Bem vindo <span id="user-name"></span>!!</h1>
+        <p>O Melhor Destino Para os Amantes do Futebol!</p>
+
+        <div class="container-cadastro">
+          <h2 class="title">Campeonato</h2>
+          <form>
+            <label for="nomePatrocinador">Nome do Campeonato</label>
+            <input type="text" id="nomePatrocinador" name="nomePatrocinador" />
+
+            <label for="dataInicio">Data de Inicio do Campeonato</label>
+            <input type="date" id="dataInicio" name="dataInicio" />
+            <label for="dataTermino">Data de Termino do Campeonato</label>
+            <input type="date" id="dataTermino" name="dataTermino" />
+
+            <label for="descricaoPatrocinador">Descrição:</label>
+            <textarea
+              id="descricaoPatrocinador"
+              name="descricaoPatrocinador"
+            ></textarea>
+
+            <label for="contatoPatrocinador">Contato (opcional):</label>
+            <input
+              type="text"
+              id="contatoPatrocinador"
+              name="contatoPatrocinador"
+            />
+          </form>
+
+          <h2 class="title">Times</h2>
+          <form>
+            <label for="quantidadeTimes">Quantos times irão participar?</label>
+            <input type="number" id="quantidadeTimes" name="quantidadeTimes" />
+
+            <button type="button" onclick="adicionarTimes()">
+              Adicionar Times
+            </button>
+
+            <div id="timesContainer"></div>
+          </form>
+        </div>
+
+        <button type="submit" id="enviarFormulario">Enviar</button>
+      </section>
+    </main>
+  </body>
+
+  <script>
+    // Obtém o valor do parâmetro 'username' da URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get("username");
+
+    // Exibe o nome do usuário no elemento HTML
+    document.getElementById("user-name").textContent = username;
+  </script>
+
+  <script>
+    function adicionarTimes() {
+      const quantidadeTimes = parseInt(
+        document.getElementById("quantidadeTimes").value
+      );
+      const timesContainer = document.getElementById("timesContainer");
+
+      // Verificar se a quantidade inserida é maior ou igual a 2
+      if (quantidadeTimes < 2) {
+        alert("Você deve adicionar pelo menos 2 times.");
+        return;
+      }
+
+      // Limpar o conteúdo anterior, se houver
+      timesContainer.innerHTML = "";
+
+      // Adicionar campos de times de acordo com a quantidade selecionada
+      for (let i = 1; i <= quantidadeTimes; i++) {
+        const timeDiv = document.createElement("div");
+        timeDiv.innerHTML = `
+                <h3>Time ${i}:</h3>
+                <label for="nomeTime${i}">Nome do Time:</label>
+                <input type="text" id="nomeTime${i}" name="nomeTime${i}">
+
+                <label for="escudoTime${i}">Escudo do Time:</label>
+                <input type="file" id="escudoTime${i}" name="escudoTime${i}">
+
+                <label for="fundacaoTime${i}">Fundação do Time:</label>
+                <input type="date" id="fundacaoTime${i}" name="fundacaoTime${i}">
+
+                <label for="capitaoTime${i}">Capitão do Time:</label>
+                <input type="text" id="capitaoTime${i}" name="capitaoTime${i}">
+
+                <label for="tecnicoTime${i}">Técnico do Time:</label>
+                <input type="text" id="tecnicoTime${i}" name="tecnicoTime${i}">
+                
+                <label for="presidenteTime${i}">Presidente do Time:</label>
+                <input type="text" id="presidenteTime${i}" name="presidenteTime${i}">
+
+                <label for="localizacaoTime${i}">Localização do Time:</label>
+                <input type="text" id="localizacaoTime${i}" name="localizacaoTime${i}">
+
+                <label for="estadioTime${i}">Estádio do Time:</label>
+                <input type="text" id="estadioTime${i}" name="estadioTime${i}">
+
+                <label for="patrocinadorTime${i}">Patrocinador do Time:</label>
+                <input type="text" id="patrocinadorTime${i}" name="patrocinadorTime${i}">
+
+                <h4>Jogadores (máximo 15):</h4>
+                    <div id="jogadoresContainer${i}">
+                        <!-- Campos de jogadores serão adicionados dinamicamente aqui -->
+                    </div>
+                    <button type="button" onclick="adicionarJogadores(${i})">Adicionar Jogadores</button>
+            `;
+        timesContainer.appendChild(timeDiv);
+      }
+    }
+
+    function adicionarJogadores(timeIndex) {
+      const jogadoresContainer = document.getElementById(
+        `jogadoresContainer${timeIndex}`
+      );
+      const jogadorCount =
+        jogadoresContainer.querySelectorAll(".jogador").length;
+
+      if (jogadorCount >= 15) {
+        alert("Limite máximo de 15 jogadores atingido.");
+        return;
+      }
+
+      const jogadorDiv = document.createElement("div");
+      jogadorDiv.classList.add("jogador");
+      jogadorDiv.innerHTML = `
+        <h2>Jogador  ${jogadorCount + 1}:</h5>
+        <label for="nomeJogador${timeIndex}-${jogadorCount}">Nome do Jogador:</label>
+        <input type="text" id="nomeJogador${timeIndex}-${jogadorCount}" name="nomeJogador${timeIndex}-${jogadorCount}">
+        <label for="nacionalidadeJogador${timeIndex}-${jogadorCount}">Nacionalidade:</label>
+        <input type="text" id="nacionalidadeJogador${timeIndex}-${jogadorCount}" name="nacionalidadeJogador${timeIndex}-${jogadorCount}">
+        <label for="numeroCamisa${timeIndex}-${jogadorCount}">Número da Camisa:</label>
+        <input type="number" id="numeroCamisa${timeIndex}-${jogadorCount}" name="numeroCamisa${timeIndex}-${jogadorCount}">
+        <label for="posicaoJogador${timeIndex}-${jogadorCount}">Posição do Jogador:</label>
+        <select id="posicaoJogador${timeIndex}-${jogadorCount}" name="posicaoJogador${timeIndex}-${jogadorCount}">
+        <option value="goleiro">Goleiro</option>
+        <option value="zagueiro">Zagueiro</option>
+        <option value="lateral">Lateral</option>
+        <option value="meia">Meia</option>
+        <option value="atacante">Atacante</option>
+        </select>
+  `;
+
+      jogadoresContainer.appendChild(jogadorDiv);
+    }
+  </script>
+</html>

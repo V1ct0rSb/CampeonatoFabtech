@@ -1,0 +1,134 @@
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  background: var(--bg-box);
+  border-radius: 10px;
+  padding: 30px;
+  /* text-align: center; */
+}
+
+.container h1 {
+  font-size: 36px;
+  color: var(--color-first);
+}
+
+.container p {
+  font-size: 24px;
+  color: white;
+}
+
+.title {
+  font-size: 30px;
+  color: var(--color-first);
+  margin-top: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"],
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #0056b3;
+}
+
+div[id="timesContainer"] {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.jogador {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.jogador label {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.jogador input[type="text"],
+.jogador input[type="number"],
+.jogador select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.jogador button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.jogador button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px; /* Aumenta o espaçamento vertical */
+  background-color: #f9f9f9; /* Cor de fundo mais suave */
+  outline: none; /* Remove a borda ao focar o campo */
+}
+
+/* Estilo para campos de entrada em foco */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #007bff; /* Cor da borda ao focar */
+  box-shadow: 0 0 5px #007bff; /* Sombra ao focar */
+}

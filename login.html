@@ -41,7 +41,7 @@
         </div>
         <!-- Formulário de login -->
         <div class="form">
-          <form action="#">
+          <form action="welcome.html">
             <!-- Cabeçalho do formulário -->
             <div class="form-header">
               <div class="title">
@@ -50,12 +50,12 @@
             </div>
             <!-- Campos de entrada -->
             <div class="input-box">
-              <label for="email">E-mail</label>
+              <label for="username">Username:</label>
               <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Digite seu e-mail"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Digite seu nick"
                 required
               />
             </div>
@@ -67,14 +67,13 @@
                   type="password"
                   name="password"
                   placeholder="Digite sua senha"
-                  required
                 />
                 <ion-icon name="eye-outline" class="toggle-password"></ion-icon>
               </div>
             </div>
             <!-- Botão de entrada -->
             <div class="continue-button">
-              <button><a href="#">Entrar</a></button>
+              <button><a href="welcome.html">Entrar</a></button>
             </div>
           </form>
 
@@ -117,6 +116,4 @@
   ></script>
   <!-- Mostrar Senha -->
   <script src="verSenha.js"></script>
-  <!-- Levar para o topo da pagina -->
-  <script src="levarAoTopo.js"></script>
 </html>
