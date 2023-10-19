@@ -20,18 +20,19 @@
           <li><a href="midia.html">Mídia</a></li>
         </ul>
       </nav>
+
       <div class="bt-login">
         <a href="login.html">
           <ion-icon name="person-circle-outline"></ion-icon>
         </a>
-      </div>
     </header>
+
+    <button id="topButton" onclick="scrollTopFunction()">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
 
     <main>
       <section class="container">
-        <div class="icon">
-          <ion-icon name="person-circle-outline"></ion-icon>
-        </div>
         <h1>Bem vindo <span id="user-name"></span>!!</h1>
         <p>O Melhor Destino Para os Amantes do Futebol!</p>
 
@@ -190,4 +191,7 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+
+  <!-- Levar para o topo da página -->
+  <script src="levarAoTopo.js"></script>
 </html>

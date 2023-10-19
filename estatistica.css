@@ -34,8 +34,9 @@
 }
 
 .container-estatistica th {
-  background-color: #5f5f65;
-  color: var(--color-second);
+  background-color: var(--color-first);
+  color: var(--bg-box);
+  border: 1px solid white;
 }
 
 /* Estilos para as células que contêm imagens e logotipos */

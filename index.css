@@ -146,7 +146,6 @@
 
 /*---------------- tabela de classificação--------- */
 .container-class {
-  width: 100%;
   max-width: 1200px;
   margin: 30px auto;
   padding: 20px;
@@ -163,32 +162,19 @@
   font-size: 30px;
   padding: 15px 0px 30px 0px;
   text-align: center;
-}
-
-.container-class h3 {
-  color: var(--color-first);
-  font-size: 30px;
-  padding: 15px 0px 25px 0px;
   text-decoration: underline;
   text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
   text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
-  text-align: left;
-}
-
-.container-class h4 {
-  color: var(--color-first);
-  font-size: 25px;
-  padding: 15px 0px 20px 0px;
-}
-
-.container-class .grupo {
-  padding-bottom: 50px;
 }
 
 .container-class table {
-  max-width: 1200px;
+  width: 90%;
   margin: auto;
   border-collapse: collapse;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-second);
+  border: 1px solid white;
 }
 
 .container-class th,
@@ -198,8 +184,8 @@
 }
 
 .container-class th {
-  background-color: #5f5f65;
-  color: white;
+  background-color: var(--color-first);
+  color: var(--bg-box);
   border: 1px solid white;
 }
 
@@ -209,8 +195,9 @@
   background-color: #343a40;
 }
 .container-class tr:hover {
-  background: #9ca3ab;
-  color: var(--bg-black);
+  background-color: var(--color-second);
+  color: var(--bg-box);
+  border: 1px solid white;
 }
 
 .alinhar-time {
@@ -221,7 +208,7 @@
 .alinhar-time img {
   max-width: 50px; /* Defina o tamanho máximo desejado */
   height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .primeiros {
@@ -235,33 +222,26 @@
 /* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
   .container-class table {
-    max-width: 90%;
+    width: 100%;
   }
-
+  .container-class th,
+  .container-class td {
+    padding: 5px;
+    font-size: 14px;
+  }
   .container-class h2 {
-    font-size: 24px;
-  }
-
-  .container-class h3 {
     font-size: 20px;
   }
-
-  .container-class h4 {
-    font-size: 18px;
+  .container-class tr {
+    font-size: 14px;
   }
-
-  /* Reduza o tamanho das imagens */
+  .container-class tr:hover {
+    font-size: 14px;
+  }
   .alinhar-time img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
-
-  /* Tornar a tabela responsiva */
-  .container-class table {
-    font-size: 12px; /* Reduz o tamanho da fonte das tabelas para melhor legibilidade em telas pequenas */
-    width: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
-    overflow-x: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
+    max-width: 30px; /* Defina o tamanho máximo desejado */
+    height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+    margin-right: 10px;
   }
 }
 
@@ -322,19 +302,19 @@
 
 /* ---------Noticias da Home--------- */
 .news-container {
-  margin: 30px auto 30px auto;
-  background: var(--bg-box);
+  background-color: var(--bg-box);
   max-width: 1200px;
-  padding: 40px;
-  border-radius: 10px;
+  margin: 30px auto;
+  padding: 50px;
   border: 2px solid var(--color-first);
+  border-radius: 10px;
   box-shadow: 0 5px 15px;
 }
 
 .news-container h2 {
-  text-align: center;
   font-size: 30px;
   color: var(--color-first);
+  text-align: center;
   margin-bottom: 30px;
   text-decoration: underline;
   text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
@@ -343,8 +323,8 @@
 
 .new {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .news-item {
@@ -355,7 +335,7 @@
 }
 
 .news-item img {
-  max-width: 250px; /* Defina o tamanho máximo desejado */
+  max-width: 100%; /* Defina o tamanho máximo desejado */
   height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
   border-radius: 10px;
 }
@@ -403,7 +383,7 @@
     border-radius: 10px;
   }
   .news-item a p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 

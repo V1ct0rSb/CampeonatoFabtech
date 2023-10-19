@@ -55,8 +55,9 @@
 }
 
 .container-box .tabela th {
-  background-color: #5f5f65;
-  color: #fff;
+  background-color: var(--color-first);
+  color: var(--bg-box);
+  border: 1px solid white;
 }
 
 .info-torcedores p {
