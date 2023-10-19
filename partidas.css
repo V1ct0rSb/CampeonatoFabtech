@@ -1,4 +1,3 @@
-
 /* ----------------------------Tela de Partidas----------------------------*/
 /* Estilo para o container principal */
 .container-box {
@@ -118,7 +117,8 @@
 .redes-sociais a ion-icon:hover {
   color: var(--color-first); /* Cor diferente ao passar o mouse */
 }
-#rodada-select {
+#rodada-select,
+#rodada-encerradas-select {
   margin-top: 10px;
   padding: 5px;
   font-size: 16px;
@@ -128,6 +128,7 @@
   outline: none;
 }
 
-#rodada-select:hover {
+#rodada-select:hover,
+#rodada-encerradas-select:hover {
   background-color: #ccc;
 }
