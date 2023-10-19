@@ -56,32 +56,8 @@
   height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .container-estatistica section {
-    margin: 10px 0; /* Remove margem nas laterais para economizar espaço */
-    padding: 10px; /* Reduz o preenchimento para economizar espaço */
-    box-shadow: none; /* Remova a sombra para simplificar */
-  }
-
-  .container-estatistica h2 {
-    font-size: 24px; /* Reduz o tamanho da fonte para melhor legibilidade em telas pequenas */
-  }
-
-  .container-estatistica table {
-    font-size: 12px; /* Reduz o tamanho da fonte das tabelas para melhor legibilidade em telas pequenas */
-    width: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
-    overflow-x: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
-  }
-
-  .container-estatistica td img {
-    max-width: 50px; /* Defina o tamanho máximo desejado */
-    height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
-  }
-
-  /* Ajusta o layout das tabelas para economizar espaço horizontal */
-  .container-estatistica th,
-  .container-estatistica td {
-    padding: 5px;
+    margin: 30px 10px; /* Centraliza o conteúdo horizontalmente */
   }
 }

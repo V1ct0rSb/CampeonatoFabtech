@@ -8,27 +8,31 @@
 }
 
 .container h1 {
-  font-size: 36px;
+  font-size: 40px;
   color: var(--color-first);
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .container p {
   font-size: 24px;
-  color: white;
+  color: var(--color-second);
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .title {
   font-size: 30px;
   color: var(--color-first);
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 form {
-  background-color: #fff;
-  padding: 20px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
 
 label {
@@ -49,11 +53,10 @@ textarea {
 
 input[type="submit"],
 button {
+  padding: 12px 24px;
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 12px 24px;
-  border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
   margin-top: 10px;
@@ -71,15 +74,24 @@ div[id="timesContainer"] {
 }
 
 h3 {
-  margin-top: 20px;
-  font-size: 24px;
+  text-align: center;
+  font-size: 30px;
+  color: var(--color-first);
+  margin-bottom: 10px;
 }
 
 .jogador {
   margin-top: 20px;
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.jogador h2 {
+  font-size: 30px;
+  color: var(--color-first);
+  margin-bottom: 10px;
 }
 
 .jogador label {
@@ -116,19 +128,16 @@ input[type="text"],
 input[type="number"],
 input[type="date"],
 input[type="file"] {
-  width: 100%;
-  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 15px; /* Aumenta o espaçamento vertical */
-  background-color: #f9f9f9; /* Cor de fundo mais suave */
-  outline: none; /* Remove a borda ao focar o campo */
+  padding: 10px;
+  font-size: 16px;
 }
 
 /* Estilo para campos de entrada em foco */
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="date"]:focus {
-  border-color: #007bff; /* Cor da borda ao focar */
-  box-shadow: 0 0 5px #007bff; /* Sombra ao focar */
+  border-color: var(--color-first);
+  box-shadow: 0 0 5px var(--color-first);
 }

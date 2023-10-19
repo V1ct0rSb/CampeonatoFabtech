@@ -1,11 +1,18 @@
 /* ----------------------------Tela de Login----------------------------*/
 .container-login {
-  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
   display: flex;
+  border-radius: 10px;
+  border: 2px solid var(--color-first);
+  box-shadow: 0 5px 15px;
+  overflow: hidden;
+  background-color: var(--bg-box);
 }
 
 .form-image {
   width: 60%;
+  background-color: var(--color-first);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +88,7 @@
 
 .continue-button button {
   width: 50%;
-  margin-top: 40px;
+  margin-top: 10px;
   border: none;
   background-color: var(--color-first);
   padding: 0.62rem;
@@ -124,6 +131,7 @@
 
 /* Estilizando a lista de ícones */
 .sociais-rede ul {
+  display: flex;
   list-style: none;
   padding: 0;
   margin-top: 20px;
@@ -146,4 +154,45 @@
 /* Estilizando os ícones ao passar o mouse sobre eles */
 .sociais-rede a ion-icon:hover {
   color: var(--color-first); /* Cor diferente ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .container-login {
+    flex-direction: column;
+  }
+
+  .form-image {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+    border-left: none;
+    border-top: 3px solid var(--color-first);
+  }
+
+  .form-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-header .title h2 {
+    font-size: 30px;
+  }
+
+  .form-header h2::after {
+    width: 50px;
+  }
+
+  .input-box input {
+    padding: 13px 40px;
+  }
+
+  .continue-button button {
+    width: 100%;
+  }
+
+  .sociais-rede ul {
+    margin-right: 0;
+  }
 }

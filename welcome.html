@@ -160,7 +160,7 @@
       const jogadorDiv = document.createElement("div");
       jogadorDiv.classList.add("jogador");
       jogadorDiv.innerHTML = `
-        <h2>Jogador  ${jogadorCount + 1}:</h5>
+        <h2>Jogador ${jogadorCount + 1}:</h2>
         <label for="nomeJogador${timeIndex}-${jogadorCount}">Nome do Jogador:</label>
         <input type="text" id="nomeJogador${timeIndex}-${jogadorCount}" name="nomeJogador${timeIndex}-${jogadorCount}">
         <label for="nacionalidadeJogador${timeIndex}-${jogadorCount}">Nacionalidade:</label>
@@ -180,4 +180,14 @@
       jogadoresContainer.appendChild(jogadorDiv);
     }
   </script>
+
+  <!-- icons  -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
 </html>

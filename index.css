@@ -107,26 +107,40 @@
   background-color: var(--color-second);
 }
 
-/* Adicione uma media query para estilos específicos em telas menores */
 @media screen and (max-width: 768px) {
   .carousel {
-    overflow-x: auto;
-    flex-wrap: nowrap; /* Impede que os cartões quebrem para a próxima linha */
+    flex-direction: column;
   }
 
-  #prevButton,
-  #nextButton {
-    padding: 5px 5px; /* Aumente o padding para ajustar o tamanho dos botões */
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 30px; /* Aumente o tamanho da fonte */
-    height: 100px;
+  .card-slider {
+    width: 100%;
   }
 
   .play01 img,
   .play02 img {
-    max-width: 200px; /* Defina o tamanho máximo desejado */
+    max-width: 100%; /* Defina o tamanho máximo desejado */
     height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .play01 p,
+  .play02 p {
+    font-size: 20px;
+  }
+
+  .score-card-slider p {
+    padding-top: 50px;
+    font-size: 60px;
+  }
+
+  #prevButton,
+  #nextButton {
+    height: 100px; /*Defina a altura desejada */
+    padding: 10px 20px; /* Aumente o padding para ajustar o tamanho dos botões */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px; /* Aumente o tamanho da fonte */
   }
 }
 
@@ -218,6 +232,39 @@
   border-left: 3px solid red;
 }
 
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .container-class table {
+    max-width: 90%;
+  }
+
+  .container-class h2 {
+    font-size: 24px;
+  }
+
+  .container-class h3 {
+    font-size: 20px;
+  }
+
+  .container-class h4 {
+    font-size: 18px;
+  }
+
+  /* Reduza o tamanho das imagens */
+  .alinhar-time img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  /* Tornar a tabela responsiva */
+  .container-class table {
+    font-size: 12px; /* Reduz o tamanho da fonte das tabelas para melhor legibilidade em telas pequenas */
+    width: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
+    overflow-x: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
+  }
+}
+
 /* --------Times Particpantes----- */
 .container-times {
   background-color: var(--bg-box);
@@ -264,6 +311,13 @@
 
 .time:hover img {
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .time {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* ---------Noticias da Home--------- */
@@ -342,6 +396,17 @@
   box-shadow: 0 0 25px var(--color-first);
 }
 
+@media screen and (max-width: 768px) {
+  .news-item img {
+    max-width: 100%; /* Defina o tamanho máximo desejado */
+    height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+    border-radius: 10px;
+  }
+  .news-item a p {
+    font-size: 14px;
+  }
+}
+
 /* ----------------------------Top 3 Artilheiros da Home----------------------------*/
 
 .container-top {
@@ -393,4 +458,25 @@
   padding: 10px 0px 10px 0px;
   font-size: 30px;
   color: var(--color-first);
+}
+
+@media screen and (max-width: 768px) {
+  .container-artilheiro {
+    gap: 30px;
+  }
+  .box-arti {
+    width: 150px;
+  }
+  .box-arti img {
+    max-height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 3px solid var(--color-first);
+    width: 100%;
+    background-color: white;
+  }
+  .box-arti h2 {
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    color: var(--color-first);
+  }
 }
