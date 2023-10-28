@@ -187,9 +187,16 @@ function preencherTabelaPartidasEncerradas(tabela, partidasEncerradas) {
   partidasEncerradas.forEach((partida) => {
     const linha = document.createElement("tr");
     linha.innerHTML = `
-      <td>${partida.timeMandante}</td>
-      <td>${partida.placarMandante} - ${partida.placarVisitante}</td>
-      <td>${partida.timeVisitante}</td>
+    
+      <td>
+      <img class="logo-time" src="assets/img/${partida.timeMandante}.png" alt="Logo ${partida.timeMandante}" />
+      <p>${partida.timeMandante}</p>
+    </td>
+    <td>${partida.placarMandante} - ${partida.placarVisitante}</td>
+    <td>
+      <img class="logo-time" src="assets/img/${partida.timeVisitante}.png" alt="Logo ${partida.timeVisitante}" />
+      <p>${partida.timeVisitante}</p>
+    </td>
       <td>${partida.arbitro}</td>
       <td>${partida.horario}</td>
       <td>${partida.data}</td>
