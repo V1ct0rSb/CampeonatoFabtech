@@ -52,6 +52,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
 }
+
 .theme-switch {
   display: inline-block;
   height: 34px;
@@ -72,6 +73,13 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   top: 0;
   transition: 0.4s;
+  display: flex;
+  align-items: center;
+}
+
+.slider .moon-icon,
+.slider .sunny-icon {
+  margin: 0 8px; /* Ajuste a margem conforme necessário */
 }
 
 .slider:before {
@@ -100,6 +108,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
 
 /* ----------------------------Parte do Header---------------------------- */
 /* Header */
