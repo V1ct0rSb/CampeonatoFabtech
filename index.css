@@ -25,7 +25,7 @@
 }
 
 .card-slider {
-  background-color: var(--bg-box);
+  background-color: var(--bg-first);
   width: 100%; /* Usar 100% para tornar o design responsivo */
   display: none;
   text-align: center;
@@ -57,7 +57,7 @@
 .play01 p,
 .play02 p {
   background: linear-gradient(to bottom, #591c21, #d92525);
-  color: var(--color-second);
+  color: white;
   font-size: 25px;
   font-weight: bold;
   padding: 5px;
@@ -104,7 +104,7 @@
 
 #prevButton:hover,
 #nextButton:hover {
-  background-color: var(--color-second);
+  background-color: var(--hover-first);
 }
 
 @media screen and (max-width: 768px) {
@@ -150,11 +150,10 @@
   margin: 30px auto;
   padding: 20px;
   text-align: center;
-  background: var(--bg-box);
+  background: var(--bg-first);
   border-radius: 10px;
   box-shadow: 0 5px 15px;
   border: 2px solid var(--color-first);
-  background: var(--bg-box);
 }
 
 .container-class h2 {
@@ -171,10 +170,6 @@
   width: 90%;
   margin: auto;
   border-collapse: collapse;
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--color-second);
-  border: 1px solid white;
 }
 
 .container-class th,
@@ -185,19 +180,14 @@
 
 .container-class th {
   background-color: var(--color-first);
-  color: var(--bg-box);
-  border: 1px solid white;
+  color: var(--color-third);
+  border: 1px solid var(--color-second);
 }
 
 .container-class tr {
-  color: rgb(255, 255, 255);
-  border: 1px solid white;
-  background-color: #343a40;
-}
-.container-class tr:hover {
-  background-color: var(--color-second);
-  color: var(--bg-box);
-  border: 1px solid white;
+  color: var(--color-second);
+  border: 1px solid var(--color-second);
+  background: var(--bg-third);
 }
 
 .alinhar-time {
@@ -248,7 +238,7 @@
 
 /* --------Times Particpantes----- */
 .container-times {
-  background-color: var(--bg-box);
+  background-color: var(--bg-first);
   max-width: 1200px;
   margin: 30px auto;
   padding: 50px;
@@ -303,7 +293,7 @@
 
 /* ---------Noticias da Home--------- */
 .news-container {
-  background-color: var(--bg-box);
+  background-color: var(--bg-first);
   max-width: 1200px;
   margin: 30px auto;
   padding: 50px;
@@ -329,7 +319,6 @@
 }
 
 .news-item {
-  background-color: var(--bg-box);
   flex: 1;
   padding: 10px;
   margin: 5px;
@@ -362,17 +351,17 @@
 }
 
 #news-link {
-  text-decoration: none;
-  border: 2px solid var(--color-first);
   background-color: var(--color-first);
-  color: var(--bg-box);
+  border: 2px solid var(--color-first);
+  border-radius: 5px;
+  color: var(--color-third);
+  text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
-  border-radius: 5px;
 }
 
 #news-link:hover {
-  background-color: var(--color-second);
+  background-color: var(--hover-first);
   border: 3px solid var(--color-first);
   box-shadow: 0 0 25px var(--color-first);
 }
@@ -391,7 +380,7 @@
 /* ----------------------------Top 3 Artilheiros da Home----------------------------*/
 
 .container-top {
-  background-color: var(--bg-box);
+  background-color: var(--bg-first);
   max-width: 1200px;
   margin: 30px auto;
   padding: 50px;
@@ -422,7 +411,7 @@
   width: 200px;
   text-align: center;
   box-shadow: 0 5px 15px;
-  background-color: var(--bg-main);
+  background-color: var(--bg-second);
   margin: 0;
   border-radius: 10px;
 }

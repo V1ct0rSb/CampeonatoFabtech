@@ -7,18 +7,32 @@
 }
 
 :root {
-  --bg-box: #16181b;
-  --bg-main: #142b59;
+  --bg-first: #16181b;
+  --bg-second: #0e1d3c;
+  --bg-third: #373b43;
 
   --color-first: #aeff00;
   --color-second: white;
+  --color-third: black;
 
-  --btn-hover: #8bcb00;
+  --hover-first: #77ae00;
+}
+
+[data-theme="light"] {
+  --bg-first: #c9c9c9;
+  --bg-second: #e8e8e8;
+  --bg-third: #e4e4e4;
+
+  --color-first: #0055ff;
+  --color-second: black;
+  --color-third: white;
+
+  --hover-first: #0037a4;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--bg-main);
+  background-color: var(--bg-second);
 }
 
 /* Barras de rolagem */
@@ -33,12 +47,64 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px; /* roundness of the scroll thumb */
 }
 
+/* dark mode */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 /* ----------------------------Parte do Header---------------------------- */
 /* Header */
 header {
-  background-color: var(--bg-box);
-  /* padding: 15px 0; */
-  /* border-bottom: 2px solid var(--color-first); */
+  background-color: #16181b;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,22 +129,22 @@ header .search input {
   border-top-left-radius: 10px;
   border: 2px solid var(--color-first);
   padding: 15px;
-  background-color: #373b43;
-  color: var(--color-second);
+  background-color: white;
+
   font-size: 20px;
   transition: all 0.3s ease;
 }
 header .search input:focus {
-  background-color: var(--bg-box);
+  background-color: grey;
 }
 header .search input::placeholder {
-  color: var(--color-second);
+  color: black;
   font-size: 20px;
 }
 
 header .search ion-icon {
   font-size: 40px;
-  color: var(--bg-box);
+  color: var(--color-third);
   transition: 1s ease-in-out;
   background-color: var(--color-first);
   border-top-right-radius: 10px;
@@ -86,14 +152,8 @@ header .search ion-icon {
   cursor: pointer;
 }
 
-header .search ion-icon:hover {
-  background-color: var(--btn-hover);
-  color: var(--color-second);
-  transition: color 0.3s ease;
-}
-
 .bt-login a {
-  color: var(--color-second);
+  color: white;
   font-size: 40px;
   transition: color 0.3s ease;
 }
@@ -118,7 +178,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--bg-box);
+  color: black;
   font-weight: bolder;
   font-size: 20px;
   text-decoration: none;
@@ -128,7 +188,6 @@ nav ul li a:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 9px;
-  /* color: #444444; */
 }
 
 /* ----------------------------Função de subir para o topo----------------------------*/
@@ -148,7 +207,7 @@ nav ul li a:hover {
 }
 
 #topButton:hover {
-  background-color: var(--color-second);
+  background-color: var(--hover-first);
   border: 3px solid var(--color-first);
   box-shadow: 0 0 25px var(--color-first);
 }
@@ -160,7 +219,7 @@ nav ul li a:hover {
 
 /* ----------------------------FOOTER---------------------------- */
 footer {
-  background-color: var(--bg-box);
+  background-color: var(--bg-first);
   padding: 15px 0;
   border-top: 2px solid var(--color-first);
 
