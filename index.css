@@ -209,6 +209,7 @@
   max-width: 50px; /* Defina o tamanho máximo desejado */
   height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
   margin-right: 10px;
+  border-radius: 3px;
 }
 
 .primeiros {
@@ -411,10 +412,10 @@
 
 .container-artilheiro {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 90px;
-  text-align: center;
+  gap: 50px;
 }
 
 .box-arti {
@@ -436,7 +437,7 @@
 
 .box-arti h2 {
   padding: 10px 0px 10px 0px;
-  font-size: 30px;
+  font-size: 25px;
   color: var(--color-first);
 }
 

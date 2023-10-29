@@ -43,6 +43,7 @@
 .container-estatistica td img {
   display: block;
   margin: 0 auto; /* Centraliza horizontalmente */
+  border-radius: 3px;
 }
 
 .container-estatistica td {

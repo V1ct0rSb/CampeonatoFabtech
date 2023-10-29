@@ -4,6 +4,7 @@
   background: var(--bg-box);
   border-radius: 10px;
   padding: 30px;
+  border: 2px solid var(--color-first);
   /* text-align: center; */
 }
 
@@ -22,6 +23,9 @@
 }
 
 .title {
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
   font-size: 30px;
   color: var(--color-first);
   margin-top: 30px;
@@ -37,7 +41,7 @@ form {
 
 label {
   display: block;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 18px;
 }
 
@@ -54,17 +58,19 @@ textarea {
 input[type="submit"],
 main button {
   padding: 12px 24px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--color-first);
+  color: var(--bg-box);
+  font-weight: bolder;
   border: none;
   cursor: pointer;
   font-size: 18px;
   margin-top: 10px;
+  border-radius: 10px;
 }
 
 input[type="submit"]:hover,
 button:hover {
-  background-color: #0056b3;
+  background-color: #88bd2d;
 }
 
 div[id="timesContainer"] {
@@ -110,20 +116,6 @@ h3 {
   font-size: 16px;
 }
 
-.jogador button {
-  padding: 12px 24px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.jogador button:hover {
-  background-color: #0056b3;
-}
-
 input[type="text"],
 input[type="number"],
 input[type="date"],
@@ -140,4 +132,43 @@ input[type="number"]:focus,
 input[type="date"]:focus {
   border-color: var(--color-first);
   box-shadow: 0 0 5px var(--color-first);
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 30px 10px; /* Centraliza o conteúdo horizontalmente */
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .container p {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .jogador h2 {
+    font-size: 25px;
+  }
+
+  .jogador label {
+    font-size: 16px;
+  }
+
+  .jogador input[type="text"],
+  .jogador input[type="number"],
+  .jogador select {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="file"] {
+    font-size: 14px;
+  }
 }

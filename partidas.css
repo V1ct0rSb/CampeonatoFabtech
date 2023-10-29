@@ -118,6 +118,11 @@
 .redes-sociais a ion-icon:hover {
   color: var(--color-first); /* Cor diferente ao passar o mouse */
 }
+
+.logo-time {
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
 #rodada-select,
 #rodada-encerradas-select {
   margin-top: 10px;

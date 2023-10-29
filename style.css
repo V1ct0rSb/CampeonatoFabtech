@@ -43,7 +43,50 @@ header {
   align-items: center;
 }
 
-.logo a img {
+header .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+header .icons .search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .icons .search input {
+  width: 300px;
+  height: 30px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: 2px solid var(--color-first);
+  padding: 15px;
+  background-color: #373b43;
+  color: var(--color-second);
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+header .icons .search input:focus {
+  background-color: var(--bg-box);
+}
+header .icons .search input::placeholder {
+  color: var(--color-second);
+  font-size: 20px;
+}
+
+header .icons .search ion-icon {
+  font-size: 34px;
+  color: var(--bg-box);
+  transition: all 0.3s ease;
+  background-color: var(--color-first);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+header .logo a img {
   width: 100px;
   height: 100px;
   transition: all 0.3s ease;
@@ -81,6 +124,27 @@ nav ul li a:hover {
 .bt-login a:hover {
   color: var(--color-first);
 }
+@media (max-width: 1024px) {
+  .icons {
+    gap: 50px;
+  }
+  .search input {
+    width: 200px;
+  }
+  .search ion-icon {
+    font-size: 30px;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+  nav ul li a {
+    font-size: 18px;
+  }
+  .bt-login a {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -94,6 +158,10 @@ nav ul li a:hover {
   }
   nav ul li {
     margin: 10px 0;
+  }
+
+  .search {
+    display: none;
   }
 }
 

@@ -79,6 +79,7 @@
   max-width: 50px; /* Defina o tamanho máximo desejado */
   height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
   margin-right: 15px;
+  border-radius: 3px;
 }
 
 .primeiros {

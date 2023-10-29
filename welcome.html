@@ -12,6 +12,7 @@
       <div class="logo">
         <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
       </div>
+
       <nav>
         <ul>
           <li><a href="partidas.html">Partidas</a></li>
@@ -21,10 +22,17 @@
         </ul>
       </nav>
 
-      <div class="bt-login">
-        <a href="login.html">
-          <ion-icon name="person-circle-outline"></ion-icon>
-        </a>
+      <div class="icons">
+        <div class="search">
+          <input type="text" placeholder="Pesquisar" />
+          <ion-icon name="search-outline"></ion-icon>
+        </div>
+        <div class="bt-login">
+          <a href="login.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
     </header>
 
     <button id="topButton" onclick="scrollTopFunction()">
@@ -77,6 +85,15 @@
         <button type="submit" id="enviarFormulario">Enviar</button>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2023</p>
+      <p>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Contato</a>
+      </p>
+    </footer>
   </body>
 
   <script>
@@ -108,7 +125,7 @@
       for (let i = 1; i <= quantidadeTimes; i++) {
         const timeDiv = document.createElement("div");
         timeDiv.innerHTML = `
-                <h3>Time ${i}:</h3>
+                <h3>Time ${i}</h3>
                 <label for="nomeTime${i}">Nome do Time:</label>
                 <input type="text" id="nomeTime${i}" name="nomeTime${i}">
 
@@ -136,7 +153,7 @@
                 <label for="patrocinadorTime${i}">Patrocinador do Time:</label>
                 <input type="text" id="patrocinadorTime${i}" name="patrocinadorTime${i}">
 
-                <h4>Jogadores (máximo 15):</h4>
+                <h4>OBS: Jogadores (máximo 15)</h4>
                     <div id="jogadoresContainer${i}">
                         <!-- Campos de jogadores serão adicionados dinamicamente aqui -->
                     </div>
