@@ -3,7 +3,7 @@
 .container-estatistica section {
   max-width: 1200px;
   margin: 30px auto; /* Centraliza o conteúdo horizontalmente */
-  background-color: var(--bg-box);
+  background-color: var(--bg-first);
   padding: 20px;
   border-radius: 10px;
   border: 2px solid var(--color-first);
@@ -30,13 +30,13 @@
 .container-estatistica td {
   padding: 10px;
   text-align: center;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-second);
 }
 
 .container-estatistica th {
   background-color: var(--color-first);
-  color: var(--bg-box);
-  border: 1px solid white;
+  color: var(--bg-second);
+  border: 1px solid var(--color-second);
 }
 
 /* Estilos para as células que contêm imagens e logotipos */
@@ -50,7 +50,7 @@
   text-align: center; /* Centraliza horizontalmente o texto dentro das células */
   vertical-align: middle; /* Centraliza verticalmente o conteúdo */
   color: var(--color-second);
-  background-color: #343a40;
+  background-color: var(--bg-third);
 }
 
 .container-estatistica section img {

@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 30px auto;
 
-  background-color: var(--bg-box);
+  background-color: var(--bg-first);
 
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +61,7 @@
 }
 
 .leia:hover {
-  background-color: var(--color-second);
+  background-color: var(--hover-first);
   border: 3px solid var(--color-first);
   box-shadow: 0 0 25px var(--color-first);
 }

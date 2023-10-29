@@ -7,7 +7,7 @@
   border: 2px solid var(--color-first);
   box-shadow: 0 5px 15px;
   overflow: hidden;
-  background-color: var(--bg-box);
+  background-color: var(--bg-first);
 }
 
 .form-image {
@@ -29,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-box);
+  background-color: var(--bg-first);
   padding: 48px;
 }
 
@@ -49,7 +49,7 @@
   display: block;
   width: 80px;
   height: 5px;
-  background-color: white;
+  background-color: var(--color-second);
   margin: 0 auto;
   position: absolute;
   border-radius: 10px;
@@ -83,7 +83,7 @@
 }
 
 .input-box input::placeholder {
-  color: #000000be;
+  color: black;
 }
 
 .continue-button button {
@@ -97,7 +97,7 @@
   border: 3px solid var(--color-first);
 }
 .continue-button button:hover {
-  background-color: var(--color-second);
+  background-color: var(--hover-first);
   border: 3px solid var(--color-first);
   box-shadow: 0 0 25px var(--color-first);
 }

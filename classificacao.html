@@ -24,10 +24,22 @@
         <ion-icon name="search-outline"></ion-icon>
       </div>
 
-      <div class="bt-login">
-        <a href="login.html">
-          <ion-icon name="person-circle-outline"></ion-icon>
-        </a>
+      <div class="icons">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+              <ion-icon name="sunny-outline" class="sunny-icon"></ion-icon>
+              <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            </div>
+          </label>
+        </div>
+
+        <div class="bt-login">
+          <a href="login.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+        </div>
       </div>
     </header>
 
@@ -429,4 +441,7 @@
   ></script>
   <!-- Levar para o topo da página -->
   <script src="levarAoTopo.js"></script>
+
+  <!-- Dark mode -->
+  <script src="darkMode.js"></script>
 </html>

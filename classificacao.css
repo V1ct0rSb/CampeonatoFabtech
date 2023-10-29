@@ -4,11 +4,10 @@
   margin: 30px auto;
   padding: 20px;
   text-align: center;
-  background: var(--bg-box);
+  background: var(--bg-first);
   border-radius: 10px;
   box-shadow: 0 5px 15px;
   border: 2px solid var(--color-first);
-  background: var(--bg-box);
 }
 
 .container-class h2 {
@@ -42,9 +41,8 @@
   margin: auto;
   border-collapse: collapse;
   font-size: 16px;
-  font-weight: bold;
   color: var(--color-second);
-  border: 1px solid white;
+  border: 1px solid var(--color-second);
 }
 
 .container-class th,
@@ -55,19 +53,14 @@
 
 .container-class th {
   background-color: var(--color-first);
-  color: var(--bg-box);
-  border: 1px solid white;
+  color: var(--color-third);
+  border: 1px solid var(--color-second);
 }
 
 .container-class tr {
-  color: rgb(255, 255, 255);
-  border: 1px solid white;
-  background-color: #343a40;
-}
-.container-class tr:hover {
-  background-color: var(--color-second);
-  color: var(--bg-box);
-  border: 1px solid white;
+  color: var(--color-second);
+  border: 1px solid var(--color-second);
+  background-color: var(--bg-third);
 }
 
 .alinhar-time {
