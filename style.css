@@ -12,6 +12,8 @@
 
   --color-first: #aeff00;
   --color-second: white;
+
+  --btn-hover: #8bcb00;
 }
 
 body {
@@ -35,30 +37,28 @@ body::-webkit-scrollbar-thumb {
 /* Header */
 header {
   background-color: var(--bg-box);
-  padding: 15px 0;
-  border-bottom: 2px solid var(--color-first);
-
+  /* padding: 15px 0; */
+  /* border-bottom: 2px solid var(--color-first); */
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-header .icons {
+header .logo a img {
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+
+/* Barra de pesquisa */
+header .search {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 100px;
 }
-
-header .icons .search {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-header .icons .search input {
-  width: 300px;
-  height: 30px;
+header .search input {
+  width: 500px;
+  height: 40px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   border: 2px solid var(--color-first);
@@ -68,52 +68,28 @@ header .icons .search input {
   font-size: 20px;
   transition: all 0.3s ease;
 }
-header .icons .search input:focus {
+header .search input:focus {
   background-color: var(--bg-box);
 }
-header .icons .search input::placeholder {
+header .search input::placeholder {
   color: var(--color-second);
   font-size: 20px;
 }
 
-header .icons .search ion-icon {
-  font-size: 34px;
+header .search ion-icon {
+  font-size: 40px;
   color: var(--bg-box);
-  transition: all 0.3s ease;
+  transition: 1s ease-in-out;
   background-color: var(--color-first);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   cursor: pointer;
 }
 
-header .logo a img {
-  width: 100px;
-  height: 100px;
-  transition: all 0.3s ease;
-}
-
-nav ul {
-  display: flex;
-}
-
-nav ul li {
-  list-style: none;
-  margin: 0 30px;
-  transition: all 0.3s ease;
-}
-
-nav ul li a {
+header .search ion-icon:hover {
+  background-color: var(--btn-hover);
   color: var(--color-second);
-  font-weight: bolder;
-  font-size: 20px;
-  text-decoration: none;
   transition: color 0.3s ease;
-}
-nav ul li a:hover {
-  color: var(--color-first);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 8px;
 }
 
 .bt-login a {
@@ -124,45 +100,35 @@ nav ul li a:hover {
 .bt-login a:hover {
   color: var(--color-first);
 }
-@media (max-width: 1024px) {
-  .icons {
-    gap: 50px;
-  }
-  .search input {
-    width: 200px;
-  }
-  .search ion-icon {
-    font-size: 30px;
-  }
-  nav ul li {
-    margin: 0 20px;
-  }
-  nav ul li a {
-    font-size: 18px;
-  }
-  .bt-login a {
-    font-size: 30px;
-  }
+
+.container-header {
+  background-color: rgb(214, 214, 214);
+  padding: 8px;
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-  .logo {
-    margin-bottom: 20px;
-  }
-  nav ul {
-    flex-direction: column;
-  }
-  nav ul li {
-    margin: 10px 0;
-  }
+nav ul {
+  display: flex;
+  justify-content: center;
+}
 
-  .search {
-    display: none;
-  }
+nav ul li {
+  list-style: none;
+  margin: 0 50px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a {
+  color: var(--bg-box);
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 9px;
+  /* color: #444444; */
 }
 
 /* ----------------------------Função de subir para o topo----------------------------*/
