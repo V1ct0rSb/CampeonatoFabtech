@@ -70,6 +70,7 @@
   outline: none;
   text-align: center;
   border: 2px solid var(--color-second);
+  box-shadow: 4px 4px #16181b;
 }
 .input-box input:hover {
   background: rgb(205, 205, 205);
@@ -91,10 +92,11 @@
   margin-top: 10px;
   border: none;
   background-color: var(--color-first);
-  padding: 0.62rem;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   border: 3px solid var(--color-first);
+  color: var(--color-third);
 }
 .continue-button button:hover {
   background-color: var(--hover-first);
@@ -125,8 +127,9 @@
 }
 
 .password-input ion-icon {
-  margin-left: -40px; /* Ajuste o valor conforme necessário para alinhar o ícone adequadamente */
+  margin-left: -50px; /* Ajuste o valor conforme necessário para alinhar o ícone adequadamente */
   cursor: pointer;
+  font-size: 30px;
 }
 
 /* Estilizando a lista de ícones */
@@ -196,3 +199,4 @@
     margin-right: 0;
   }
 }
+

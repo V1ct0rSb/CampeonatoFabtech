@@ -55,7 +55,7 @@
 }
 
 .leia a {
-  color: var(--bg-box);
+  color: var(--color-third);
   font-weight: bold;
   text-decoration: none;
 }
