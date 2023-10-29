@@ -152,6 +152,13 @@ header .search ion-icon {
   cursor: pointer;
 }
 
+header .icons {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
 .bt-login a {
   color: white;
   font-size: 40px;

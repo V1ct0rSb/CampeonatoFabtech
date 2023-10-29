@@ -23,10 +23,18 @@
         <ion-icon name="search-outline"></ion-icon>
       </div>
 
-      <div class="bt-login">
-        <a href="login.html">
-          <ion-icon name="person-circle-outline"></ion-icon>
-        </a>
+      <div class="icons">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+        <div class="bt-login">
+          <a href="login.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+        </div>
       </div>
     </header>
 
@@ -40,7 +48,7 @@
         </ul>
       </nav>
     </div>
-    
+
     <button id="topButton" onclick="scrollTopFunction()">
       <ion-icon name="arrow-up-outline"></ion-icon>
     </button>
@@ -154,4 +162,6 @@
   <script src="partidas.js"></script>
   <!-- Levar para o topo da página -->
   <script src="levarAoTopo.js"></script>
+  <!-- Dark mode  -->
+  <script src="darkMode.js"></script>
 </html>

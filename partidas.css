@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 30px auto;
   padding: 20px;
-  background-color: var(--bg-box);
+  background-color: var(--bg-first);
   box-shadow: 0 5px 15px;
   border-radius: 10px;
   border: 2px solid var(--color-first);
@@ -31,7 +31,7 @@
 .container-box h2 {
   font-size: 30px;
   margin-top: 20px;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid var(--color-first);
   color: var(--color-first);
 }
 
@@ -46,18 +46,18 @@
 .container-box .tabela td {
   padding: 10px;
   text-align: center;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-second);
 }
 
 .container-box .tabela td {
   color: var(--color-second);
-  background-color: #343a40;
+  background-color: var(--bg-third);
 }
 
 .container-box .tabela th {
   background-color: var(--color-first);
-  color: var(--bg-box);
-  border: 1px solid white;
+  color: var(--bg-third);
+  border: 1px solid var(--color-second);
 }
 
 .info-torcedores p {
@@ -80,7 +80,7 @@
 /* Estilo para a seção de redes sociais */
 .redes-sociais {
   text-align: left;
-  color: #fff; /* Cor do texto */
+  color: var(--color-second); /* Cor do texto */
 }
 
 /* Estilizando o título */
@@ -110,7 +110,7 @@
 /* Estilizando os ícones (substitua "ion-icon" pelo nome da classe real) */
 .redes-sociais a ion-icon {
   font-size: 36px;
-  color: #fff; /* Cor do ícone */
+  color: var(--color-second); /* Cor do ícone */
   text-decoration: none;
 }
 
@@ -128,15 +128,10 @@
   margin-top: 10px;
   padding: 5px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--bg-third);
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-}
-
-#rodada-select:hover,
-#rodada-encerradas-select:hover {
-  background-color: #ccc;
 }
 
 @media (max-width: 768px) {
