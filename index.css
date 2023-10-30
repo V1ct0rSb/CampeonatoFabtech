@@ -378,7 +378,6 @@
 }
 
 /* ----------------------------Top 3 Artilheiros da Home----------------------------*/
-
 .container-top {
   background-color: var(--bg-first);
   max-width: 1200px;
@@ -402,32 +401,46 @@
 .container-artilheiro {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
+  gap: 60px;
 }
 
-.box-arti {
-  width: 200px;
+.box-artilheiro {
+  max-width: 300px;
+  background-color: var(--bg-second);
   text-align: center;
   box-shadow: 0 5px 15px;
-  background-color: var(--bg-second);
-  margin: 0;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-.box-arti img {
-  max-height: 100%;
-  border-radius: 10px 10px 0px 0px;
-  border-bottom: 3px solid var(--color-first);
-  width: 100%;
-  background-color: white;
+.box-artilheiro .img {
+  max-width: 300px;
+  height: auto;
+  border-bottom: 4px solid var(--color-first);
 }
 
-.box-arti h2 {
+.box-artilheiro h2 {
   padding: 10px 0px 10px 0px;
   font-size: 25px;
   color: var(--color-first);
+  border-bottom: 4px solid var(--color-first);
+}
+.box-artilheiro table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.box-artilheiro td {
+  padding: 5px;
+  text-align: center;
+  color: var(--color-second);
+}
+
+.box-artilheiro tr:nth-child(odd) {
+  background-color: var(--color-fourth); /* Cor de fundo escura para linhas ímpares */
+}
+
+.box-artilheiro tr:nth-child(even) {
+  background-color: var(--color-fifth); /* Cor de fundo escura para linhas pares */
 }
 
 @media screen and (max-width: 768px) {
