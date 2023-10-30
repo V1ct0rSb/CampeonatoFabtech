@@ -450,3 +450,120 @@
     color: var(--color-first);
   }
 }
+
+/* ----------------------------Best player----------------------------  */
+.container-best-player {
+  background-color: var(--bg-first);
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 50px;
+  border: 2px solid var(--color-first);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px;
+}
+
+.container-best-player h1 {
+  font-size: 30px;
+  color: var(--color-first);
+  text-align: center;
+  margin-bottom: 60px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
+}
+
+.container-player {
+  display: flex;
+  gap: 30px;
+}
+
+.img-best-player img {
+  max-width: 300px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.info-best-player {
+  max-width: 500px;
+  padding: 10px;
+}
+
+.info-best-player .number-player {
+  font-size: 30px;
+  color: var(--color-first);
+}
+
+.info-best-player .name-player {
+  font-size: 50px;
+  color: var(--color-second);
+}
+
+.info-best-player .position-player {
+  font-size: 25px;
+  color: var(--color-second);
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.info-best-player p {
+  color: var(--color-second);
+  line-height: 30px;
+  text-align: justify;
+}
+
+/* barra de progressao */
+#wrapper {
+  position: relative;
+  top: 0px;
+  width: 40px;
+}
+.center {
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.progress {
+  width: 200px;
+  height: 280px;
+}
+.progress .track,
+.progress .fill {
+  fill: rgba(0, 0, 0, 0);
+  stroke-width: 3;
+  transform: rotate(90deg) translate(0px, -80px);
+}
+.progress .track {
+  stroke: rgb(56, 71, 83);
+}
+.progress .fill {
+  stroke: rgb(255, 255, 255);
+  stroke-dasharray: 219.99078369140625;
+  stroke-dashoffset: -219.99078369140625;
+  transition: stroke-dashoffset 1s;
+}
+.progress.blue .fill {
+  stroke: var(--color-first);
+}
+.progress.green .fill {
+  stroke: var(--color-first);
+}
+.progress .value,
+.progress .text {
+  fill: var(--color-second);
+  text-anchor: middle;
+}
+.progress .text {
+  font-size: 12px;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
