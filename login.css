@@ -87,6 +87,11 @@
   color: black;
 }
 
+.continue-button {
+  display: flex;
+  justify-content: center;
+}
+
 .continue-button button {
   width: 50%;
   margin-top: 10px;
@@ -94,9 +99,9 @@
   background-color: var(--color-first);
   padding: 10px;
   border-radius: 5px;
-  cursor: pointer;
   border: 3px solid var(--color-first);
   color: var(--color-third);
+  cursor: pointer;
 }
 .continue-button button:hover {
   background-color: var(--hover-first);
@@ -132,31 +137,62 @@
   font-size: 30px;
 }
 
-/* Estilizando a lista de ícones */
-.sociais-rede ul {
+/* HR */
+.container {
+  margin-top: 35px;
   display: flex;
+  align-items: center;
+}
+
+.container hr {
+  flex-grow: 1;
+  border-style: inset;
+  border-width: 1px;
+  border-color: var(--color-second);
+}
+
+.container p {
+  margin: 0 10px;
+  color: var(--color-second);
+}
+
+/* Estilizando a lista de ícones */
+.sociais-rede {
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
   list-style: none;
-  padding: 0;
-  margin-top: 20px;
-  margin-right: 255px;
+  margin: 20px 15px;
+  /* padding: 10px; */
+  background: var(--color-first);
+  border: 3px solid var(--color-first);
+  border-radius: 5px;
+  font-weight: bolder;
 }
 
-/* Estilizando cada ícone de rede social */
-.sociais-rede li {
-  display: inline-block;
-  margin: 0 10px; /* Espaçamento entre os ícones */
-}
-
-/* Estilizando os ícones (substitua "ion-icon" pelo nome da classe real) */
-.sociais-rede a ion-icon {
-  font-size: 40px;
-  color: #fff; /* Cor do ícone */
+.social-icons a {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  color: var(--color-third);
+}
+.social-icons a:hover {
+  background-color: var(--hover-first);
+  box-shadow: 0 0 25px var(--color-first);
 }
 
-/* Estilizando os ícones ao passar o mouse sobre eles */
-.sociais-rede a ion-icon:hover {
-  color: var(--color-first); /* Cor diferente ao passar o mouse */
+.social-icons a ion-icon {
+  font-size: 30px;
+  margin-right: 5px;
 }
 
 @media (max-width: 768px) {
@@ -199,4 +235,3 @@
     margin-right: 0;
   }
 }
-
