@@ -17,6 +17,7 @@
 
   --color-fourth: #222;
   --color-fifth: #333;
+  --color-sixth: rgb(140, 140, 140);
 
   --hover-first: #77ae00;
 }
@@ -32,6 +33,7 @@
 
   --color-fourth: #f2f2f2;
   --color-fifth: #dcdcdc;
+  --color-sixth: black;
 
   --hover-first: #0037a4;
 }
