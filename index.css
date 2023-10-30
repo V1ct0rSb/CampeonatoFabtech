@@ -436,11 +436,15 @@
 }
 
 .box-artilheiro tr:nth-child(odd) {
-  background-color: var(--color-fourth); /* Cor de fundo escura para linhas ímpares */
+  background-color: var(
+    --color-fourth
+  ); /* Cor de fundo escura para linhas ímpares */
 }
 
 .box-artilheiro tr:nth-child(even) {
-  background-color: var(--color-fifth); /* Cor de fundo escura para linhas pares */
+  background-color: var(
+    --color-fifth
+  ); /* Cor de fundo escura para linhas pares */
 }
 
 @media screen and (max-width: 768px) {
@@ -493,8 +497,8 @@
 .img-best-player img {
   max-width: 300px; /* Defina o tamanho máximo desejado */
   height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
-  margin-right: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px;
 }
 
 .info-best-player {
