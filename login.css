@@ -1,7 +1,7 @@
 /* ----------------------------Tela de Login----------------------------*/
 .container-login {
   max-width: 1200px;
-  margin: 30px auto;
+  margin: 30px auto 43px auto;
   display: flex;
   border-radius: 10px;
   border: 2px solid var(--color-first);
@@ -63,7 +63,7 @@
 
 .input-box input {
   margin: 10px 0;
-  padding: 13px 80px;
+  padding: 15px 80px;
   border: none;
   border-radius: 5px;
   font-size: 18px;

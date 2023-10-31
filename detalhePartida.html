@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes das Partidas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="detalhePartida.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Campeonato, Time ou Jogador" />
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+
+      <div class="icons">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+              <ion-icon name="sunny-outline" class="sunny-icon"></ion-icon>
+              <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            </div>
+          </label>
+        </div>
+
+        <div class="bt-login">
+          <a href="login.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-header">
+      <nav>
+        <ul>
+          <li><a href="partidas.html">Partidas</a></li>
+          <li><a href="classificacao.html">Classificação</a></li>
+          <li><a href="estatistica.html">Estatísticas</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <button id="topButton" onclick="scrollTopFunction()">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+
+    <main>
+      <div class="container-matches-details">
+        <div class="matches-details">
+          <div class="container-background">
+            <div class="matches">
+              <img src="assets/img/barcelona.png" alt="Barcelona" />
+              <p>Barcelona</p>
+            </div>
+            <h2>VS</h2>
+            <div class="matches">
+              <img src="assets/img/Internacional.png" alt="Internacional" />
+              <p>Internacional</p>
+            </div>
+          </div>
+
+          <section class="content-matches">
+            <h2>Sobre o Confronto</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod
+              ipsam est natus facere qui corporis porro expedita ex, rerum illum
+              in minima consectetur dolorem, velit minus architecto ab dolores!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              eos voluptas obcaecati doloremque nemo, perferendis temporibus
+              eligendi autem distinctio minima doloribus? Dolore in quae sequi
+              exercitationem iste? Vitae, facilis eveniet?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod
+              ipsam est natus facere qui corporis porro expedita ex, rerum illum
+              in minima consectetur dolorem, velit minus architecto ab dolores!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              eos voluptas obcaecati doloremque nemo, perferendis temporibus
+              eligendi autem distinctio minima doloribus? Dolore in quae sequi
+              exercitationem iste? Vitae, facilis eveniet?
+            </p>
+          </section>
+
+          <section class="stadium">
+            <h2>Localização do Estádio</h2>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.474612575797!2d-37.05162462412342!3d-10.927476122073582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab384e65615dd%3A0xf79b2bb099512d06!2sEst%C3%A1dio%20Estadual%20Lourival%20Baptista%20-%20Arena%20Batist%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1698763868527!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+
+          <section class="container-related-players">
+            <h2>Jogadores Relacionados</h2>
+            <div class="related-players">
+                <div class="team">
+                    <h3>Time A</h3>
+                    <ul class="player-list">
+                      <li class="players">
+                        <span class="number"><p>99</p></span>
+                        <div class="player">
+                          <span class="name"><p>Jogador</p></span>
+                          <span class="position"><p>Goleiro</p></span>
+                        </div>
+                        <span
+                          ><img src="./assets/img/goalkeeper.png" alt=""
+                        /></span>
+                      </li>
+                      <li class="players">
+                        <span class="number"><p>11</p></span>
+                        <div class="player">
+                          <span class="name"><p>Jogador</p></span>
+                          <span class="position"><p>Zagueiro</p></span>
+                        </div>
+                        <span
+                          ><img src="./assets/img/soccer-player.png" alt=""
+                        /></span>
+                      </li>
+                      <li class="players">
+                        <span class="number"><p>87</p></span>
+                        <div class="player">
+                          <span class="name"><p>Jogador</p></span>
+                          <span class="position"><p>Zagueiro</p></span>
+                        </div>
+                        <span
+                          ><img src="./assets/img/soccer-player.png" alt=""
+                        /></span>
+                      </li>
+                      <li class="players">
+                        <span class="number"><p>45</p></span>
+                        <div class="player">
+                          <span class="name"><p>Jogador</p></span>
+                          <span class="position"><p>Zagueiro</p></span>
+                        </div>
+                        <span
+                          ><img src="./assets/img/soccer-player.png" alt=""
+                        /></span>
+                      </li>
+                      <li class="players">
+                        <span class="number"><p>29</p></span>
+                        <div class="player">
+                          <span class="name"><p>Jogador</p></span>
+                          <span class="position"><p>Lateral</p></span>
+                        </div>
+                        <span
+                          ><img src="./assets/img/soccer-player.png" alt=""
+                        /></span>
+                      </li>
+                      <li class="players">
+                        <span class="number"><p>30</p></span>
+                        <div class="player">
+                          <span class="name"><p>Jogador</p></span>
+                          <span class="position"><p>Lateral</p></span>
+                        </div>
+                        <span
+                          ><img src="./assets/img/soccer-player.png" alt=""
+                        /></span>
+                      </li>
+                      <li class="players">
+                        <span class="number"><p>38</p></span>
+                        <div class="player">
+                          <span class="name"><p>Jogador</p></span>
+                          <span class="position"><p>Lateral</p></span>
+                        </div>
+                        <span
+                          ><img src="./assets/img/soccer-player.png" alt=""
+                        /></span>
+                      </li>
+                      <li class="players">
+                        <span class="number"><p>69</p></span>
+                        <div class="player">
+                          <span class="name"><p>Jogador</p></span>
+                          <span class="position"><p>Meio-Campo</p></span>
+                        </div>
+                        <span
+                          ><img src="./assets/img/soccer-player.png" alt=""
+                        /></span>
+                      </li>
+                      <li class="players">
+                        <span class="number"><p>77</p></span>
+                        <div class="player">
+                          <span class="name"><p>Jogador</p></span>
+                          <span class="position"><p>Meio-Campo</p></span>
+                        </div>
+                        <span
+                          ><img src="./assets/img/soccer-player.png" alt=""
+                        /></span>
+                      </li>
+                      <li class="players">
+                        <span class="number"><p>95</p></span>
+                        <div class="player">
+                          <span class="name"><p>Jogador</p></span>
+                          <span class="position"><p>Atacante</p></span>
+                        </div>
+                        <span
+                          ><img src="./assets/img/soccer-player.png" alt=""
+                        /></span>
+                      </li>
+                      <!-- Adicione mais jogadores aqui -->
+                    </ul>
+                  </div>
+
+              <div class="team">
+                <h3>Time B</h3>
+                <ul class="player-list">
+                  <li class="players">
+                    <span class="number"><p>99</p></span>
+                    <div class="player">
+                      <span class="name"><p>Jogador</p></span>
+                      <span class="position"><p>Goleiro</p></span>
+                    </div>
+                    <span
+                      ><img src="./assets/img/goalkeeper.png" alt=""
+                    /></span>
+                  </li>
+                  <li class="players">
+                    <span class="number"><p>11</p></span>
+                    <div class="player">
+                      <span class="name"><p>Jogador</p></span>
+                      <span class="position"><p>Zagueiro</p></span>
+                    </div>
+                    <span
+                      ><img src="./assets/img/soccer-player.png" alt=""
+                    /></span>
+                  </li>
+                  <li class="players">
+                    <span class="number"><p>87</p></span>
+                    <div class="player">
+                      <span class="name"><p>Jogador</p></span>
+                      <span class="position"><p>Zagueiro</p></span>
+                    </div>
+                    <span
+                      ><img src="./assets/img/soccer-player.png" alt=""
+                    /></span>
+                  </li>
+                  <li class="players">
+                    <span class="number"><p>45</p></span>
+                    <div class="player">
+                      <span class="name"><p>Jogador</p></span>
+                      <span class="position"><p>Zagueiro</p></span>
+                    </div>
+                    <span
+                      ><img src="./assets/img/soccer-player.png" alt=""
+                    /></span>
+                  </li>
+                  <li class="players">
+                    <span class="number"><p>29</p></span>
+                    <div class="player">
+                      <span class="name"><p>Jogador</p></span>
+                      <span class="position"><p>Lateral</p></span>
+                    </div>
+                    <span
+                      ><img src="./assets/img/soccer-player.png" alt=""
+                    /></span>
+                  </li>
+                  <li class="players">
+                    <span class="number"><p>30</p></span>
+                    <div class="player">
+                      <span class="name"><p>Jogador</p></span>
+                      <span class="position"><p>Lateral</p></span>
+                    </div>
+                    <span
+                      ><img src="./assets/img/soccer-player.png" alt=""
+                    /></span>
+                  </li>
+                  <li class="players">
+                    <span class="number"><p>38</p></span>
+                    <div class="player">
+                      <span class="name"><p>Jogador</p></span>
+                      <span class="position"><p>Lateral</p></span>
+                    </div>
+                    <span
+                      ><img src="./assets/img/soccer-player.png" alt=""
+                    /></span>
+                  </li>
+                  <li class="players">
+                    <span class="number"><p>69</p></span>
+                    <div class="player">
+                      <span class="name"><p>Jogador</p></span>
+                      <span class="position"><p>Meio-Campo</p></span>
+                    </div>
+                    <span
+                      ><img src="./assets/img/soccer-player.png" alt=""
+                    /></span>
+                  </li>
+                  <li class="players">
+                    <span class="number"><p>77</p></span>
+                    <div class="player">
+                      <span class="name"><p>Jogador</p></span>
+                      <span class="position"><p>Meio-Campo</p></span>
+                    </div>
+                    <span
+                      ><img src="./assets/img/soccer-player.png" alt=""
+                    /></span>
+                  </li>
+                  <li class="players">
+                    <span class="number"><p>95</p></span>
+                    <div class="player">
+                      <span class="name"><p>Jogador</p></span>
+                      <span class="position"><p>Atacante</p></span>
+                    </div>
+                    <span
+                      ><img src="./assets/img/soccer-player.png" alt=""
+                    /></span>
+                  </li>
+                  <!-- Adicione mais jogadores aqui -->
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+  <!-- Icons  -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <!-- Levar para o topo da página -->
+  <script src="levarAoTopo.js"></script>
+  <!-- Dark mode -->
+  <script src="darkMode.js"></script>
+</html>

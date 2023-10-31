@@ -123,6 +123,19 @@
   border-radius: 3px;
   margin-bottom: 3px;
 }
+
+td a {
+  color: var(--color-first);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+td a:hover {
+  color: var(--color-second);
+  text-decoration: underline;
+}
+
 #rodada-select,
 #rodada-encerradas-select {
   margin-top: 10px;

@@ -1,0 +1,136 @@
+.container-matches-details {
+  max-width: 1200px;
+  margin: 30px auto; /* Centraliza o conteúdo horizontalmente */
+  background-color: var(--bg-first);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--color-first);
+  box-shadow: 0 5px 15px;
+}
+.container-background {
+  max-width: 1200px;
+  height: 400px;
+
+  margin: auto;
+  /* border: 1px solid var(--color-second); */
+  background-image: url(./assets/img/3916140a-f6c8-4ca3-98ab-083b4b9cc502.png);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  border-radius: 10px;
+}
+
+.matches img {
+  max-width: 100%; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  border-radius: 10px;
+}
+
+.matches p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.container-background h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.content-matches {
+  margin: auto;
+  max-width: 1100px;
+  /* border: 1px solid red; */
+}
+
+.content-matches h2,
+.stadium h2,
+.container-related-players h2 {
+  color: var(--color-first);
+  margin: 40px 0px 35px 0px;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Espessura do traço da linha de decoração */
+  text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
+  text-align: center;
+}
+
+.content-matches p {
+  color: var(--color-second);
+  text-align: justify;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.stadium iframe {
+  width: 100%;
+}
+
+.related-players {
+  display: flex;
+  justify-content: space-around;
+  /* margin-bottom: 20px; */
+}
+
+.team {
+  margin-bottom: 20px;
+}
+
+.team h3 {
+  background-color: var(--color-third);
+  color: var(--color-second);
+  padding: 5px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.player-list {
+  list-style: none;
+  padding: 0;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5px;
+  padding: 10px;
+  gap: 20px;
+
+  background-color: var(--bg-fourth);
+}
+
+.players .number {
+  padding: 15px;
+  background-color: var(--color-first);
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 5px;
+  color: black;
+}
+
+.players .name {
+  font-weight: bolder;
+  font-size: 25px;
+  color: black;
+}
+
+.player .position {
+  font-weight: lighter;
+  font-size: 18px;
+  color: black;
+}
+
+.players span img {
+  margin-left: 250px;
+  max-width: 50px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  border-radius: 10px;
+  background: white;
+}

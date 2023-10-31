@@ -10,14 +10,14 @@
   --bg-first: #16181b;
   --bg-second: #0e1d3c;
   --bg-third: #373b43;
+  --bg-fourth: #676767;
 
   --color-first: #aeff00;
   --color-second: white;
-  --color-third: black;
-
+  --color-third: #000000;
   --color-fourth: #222;
   --color-fifth: #333;
-  --color-sixth: rgb(140, 140, 140);
+  --color-sixth: #8c8c8c;
 
   --hover-first: #77ae00;
 }
@@ -26,14 +26,14 @@
   --bg-first: #c9c9c9;
   --bg-second: #e8e8e8;
   --bg-third: #e4e4e4;
+  --bg-fourth: #adadad;
 
   --color-first: #0055ff;
-  --color-second: black;
+  --color-second: #000000;
   --color-third: white;
-
   --color-fourth: #f2f2f2;
   --color-fifth: #dcdcdc;
-  --color-sixth: black;
+  --color-sixth: #000000;
 
   --hover-first: #0037a4;
 }

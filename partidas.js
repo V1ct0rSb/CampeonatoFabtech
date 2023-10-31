@@ -142,6 +142,7 @@ function preencherTabela(tabela, jogos) {
     <th>Árbitro</th>
     <th>Data</th>
     <th>Arena</th>
+    <th>Sobre</th>
   `;
   tabela.appendChild(cabecalho);
 
@@ -161,6 +162,7 @@ function preencherTabela(tabela, jogos) {
       <td>${jogo.arbitro}</td>
       <td>${jogo.data}</td>
       <td>${jogo.arena}</td>
+      <td><a href="detalhePartida.html">Ver mais</a></td>
     `;
     tabela.appendChild(linha);
   });
