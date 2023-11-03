@@ -388,6 +388,7 @@
   padding: 20px;
   font-size: 25px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .share:hover {
   background-color: var(--hover-first);

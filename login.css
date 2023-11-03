@@ -102,6 +102,8 @@
   border: 3px solid var(--color-first);
   color: var(--color-third);
   cursor: pointer;
+  font-weight: bolder;
+  font-size: 18px;
 }
 .continue-button button:hover {
   background-color: var(--hover-first);

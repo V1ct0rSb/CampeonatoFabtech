@@ -56,23 +56,17 @@
     <!-- Container principal -->
     <main>
       <div class="container-login">
-        <!-- Div da imagem -->
         <div class="form-image">
           <img src="assets/img/imgLogin.png" alt="" />
         </div>
-        <!-- Formulário de login -->
         <div class="form">
-          <form action="welcome.html">
-            <!-- Cabeçalho do formulário -->
+          <form onsubmit="return validateForm()">
             <div class="form-header">
               <div class="title">
                 <h2>Login</h2>
               </div>
             </div>
-
-            <!-- Campos de entrada -->
             <div class="input-box">
-              <!-- <label for="username">Username:</label> -->
               <input
                 type="text"
                 id="username"
@@ -82,7 +76,6 @@
               />
             </div>
             <div class="input-box">
-              <!-- <label for="password">Senha</label> -->
               <div class="password-input">
                 <input
                   id="password"
@@ -93,12 +86,12 @@
                 <ion-icon name="eye-outline" class="toggle-password"></ion-icon>
               </div>
             </div>
-            <!-- Botão de entrada -->
+            <div class="error-message" id="error-message"></div>
             <div class="continue-button">
-              <button><a href="welcome.html">Entrar</a></button>
+              <button>Entrar</button>
             </div>
           </form>
-
+          <div class="error-message" id="error-message"></div>
           <div class="sociais-rede">
             <div class="container">
               <hr />
@@ -145,4 +138,7 @@
   <script src="verSenha.js"></script>
   <!-- Dark mode -->
   <script src="darkMode.js"></script>
+
+  <!-- Validar Login  -->
+  <script src="validarSenha.js"></script>
 </html>
