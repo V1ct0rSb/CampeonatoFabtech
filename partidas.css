@@ -180,3 +180,43 @@ td a:hover {
     font-size: 24px;
   }
 }
+
+@media (max-width: 576px) {
+  .container-box .logo {
+    max-width: 200px;
+  }
+  .none {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-box .logo {
+    max-width: 150px;
+  }
+  .container-box .titulo-campeonato {
+    font-size: 20px;
+  }
+  .container-box h2 {
+    font-size: 16px;
+  }
+  .container-box .tabela {
+    margin-top: 5px;
+  }
+  .container-box .tabela th,
+  .container-box .tabela td {
+    padding: 5px;
+  }
+  .container-box .info-torcedores {
+    margin-top: 20px;
+  }
+  .redes-sociais h2 {
+    margin-top: 20px;
+  }
+  .redes-sociais p {
+    font-size: 14px;
+  }
+  .redes-sociais a ion-icon {
+    font-size: 24px;
+  }
+}

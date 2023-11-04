@@ -74,11 +74,11 @@
 .related-players {
   display: flex;
   justify-content: space-around;
-  /* margin-bottom: 20px; */
 }
 
 .team {
   margin-bottom: 20px;
+  /* max-width: 600px; */
 }
 
 .team h3 {
@@ -133,4 +133,116 @@
   height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
   border-radius: 10px;
   background: white;
+}
+
+@media (max-width: 1024px) {
+  .container-background {
+    height: 300px;
+    gap: 20px;
+  }
+
+  .container-background h2 {
+    font-size: 30px;
+  }
+
+  .matches p {
+    font-size: 20px;
+  }
+
+  .content-matches h2,
+  .stadium h2,
+  .container-related-players h2 {
+    font-size: 25px;
+  }
+
+  .content-matches p {
+    font-size: 16px;
+  }
+  .players span img {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-background {
+    height: 300px;
+    gap: 20px;
+  }
+
+  .container-background h2 {
+    font-size: 30px;
+  }
+
+  .matches p {
+    font-size: 20px;
+  }
+
+  .content-matches h2,
+  .stadium h2,
+  .container-related-players h2 {
+    font-size: 25px;
+  }
+
+  .content-matches p {
+    font-size: 16px;
+  }
+
+  .related-players {
+    flex-direction: column;
+  }
+
+  .players span img {
+    margin-left: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-background {
+    height: 200px;
+    gap: 20px;
+  }
+
+  .container-background h2 {
+    font-size: 20px;
+  }
+
+  .players span img {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container-background {
+    height: 200px;
+    gap: 20px;
+  }
+
+  .container-background h2 {
+    font-size: 20px;
+  }
+
+  .players span img {
+    margin-left: 50px;
+  }
+
+  .content-matches h2,
+  .stadium h2,
+  .container-related-players h2 {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-background {
+    height: 200px;
+    gap: 20px;
+  }
+
+  .container-background h2 {
+    font-size: 20px;
+  }
+
+  .container-related-players {
+    display: none;
+  }
 }

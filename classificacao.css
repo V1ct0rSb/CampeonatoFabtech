@@ -115,3 +115,9 @@
     overflow-x: auto; /* Adiciona rolagem horizontal às tabelas quando necessário */
   }
 }
+
+@media (max-width: 576px) {
+  .none {
+    display: none;
+  }
+}

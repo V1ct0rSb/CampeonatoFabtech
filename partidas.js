@@ -136,12 +136,12 @@ function preencherTabela(tabela, jogos) {
   // Criar a linha de cabeçalho da tabela
   const cabecalho = document.createElement("tr");
   cabecalho.innerHTML = `
-    <th>Horário</th>
+    <th class="none">Horário</th>
     <th>Time Mandante</th>
     <th>Time Visitante</th>
-    <th>Árbitro</th>
-    <th>Data</th>
-    <th>Arena</th>
+    <th class="none">Árbitro</th>
+    <th class="none">Data</th>
+    <th class="none">Arena</th>
     <th>Sobre</th>
   `;
   tabela.appendChild(cabecalho);
@@ -150,7 +150,7 @@ function preencherTabela(tabela, jogos) {
   jogos.forEach((jogo) => {
     const linha = document.createElement("tr");
     linha.innerHTML = `
-      <td>${jogo.horario}</td>
+      <td class="none">${jogo.horario}</td>
       <td>
         <img class="logo-time" src="assets/img/${jogo.timeMandante}.png" alt="Logo ${jogo.timeMandante}" />
         <p>${jogo.timeMandante}</p>
@@ -159,9 +159,9 @@ function preencherTabela(tabela, jogos) {
         <img class="logo-time" src="assets/img/${jogo.timeVisitante}.png" alt="Logo ${jogo.timeVisitante}" />
         <p>${jogo.timeVisitante}</p>
       </td>
-      <td>${jogo.arbitro}</td>
-      <td>${jogo.data}</td>
-      <td>${jogo.arena}</td>
+      <td class="none">${jogo.arbitro}</td>
+      <td class="none">${jogo.data}</td>
+      <td class="none">${jogo.arena}</td>
       <td><a href="detalhePartida.html">Ver mais</a></td>
     `;
     tabela.appendChild(linha);
@@ -178,10 +178,10 @@ function preencherTabelaPartidasEncerradas(tabela, partidasEncerradas) {
     <th>Time Mandante</th>
     <th>Placar</th>
     <th>Time Visitante</th>
-    <th>Árbitro</th>
-    <th>Horário</th>
-    <th>Data</th>
-    <th>Estádio</th>
+    <th class="none">Árbitro</th>
+    <th class="none">Horário</th>
+    <th class="none">Data</th>
+    <th class="none">Estádio</th>
   `;
   tabela.appendChild(cabecalho);
 
@@ -199,10 +199,10 @@ function preencherTabelaPartidasEncerradas(tabela, partidasEncerradas) {
       <img class="logo-time" src="assets/img/${partida.timeVisitante}.png" alt="Logo ${partida.timeVisitante}" />
       <p>${partida.timeVisitante}</p>
     </td>
-      <td>${partida.arbitro}</td>
-      <td>${partida.horario}</td>
-      <td>${partida.data}</td>
-      <td>${partida.arena}</td>
+      <td class="none">${partida.arbitro}</td>
+      <td class="none">${partida.horario}</td>
+      <td class="none">${partida.data}</td>
+      <td class="none">${partida.arena}</td>
     `;
     tabela.appendChild(linha);
   });

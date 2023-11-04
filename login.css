@@ -237,3 +237,57 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: 425px) {
+  .container-login {
+    margin: 60px auto 60px auto;
+  }
+
+  .form-image {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .container-login {
+    margin: 90px auto 90px auto;
+  }
+
+  .form {
+    padding: 30px;
+  }
+
+  .input-box input {
+    padding: 10px 30px;
+  }
+
+  .continue-button button {
+    font-size: 16px;
+  }
+
+  .password-input input {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-login {
+    margin: 100px auto 100px auto;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .input-box input {
+    padding: 10px 20px;
+  }
+
+  .continue-button button {
+    font-size: 14px;
+  }
+
+  .password-input input {
+    padding: 10px 20px;
+  }
+}

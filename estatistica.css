@@ -60,6 +60,96 @@
 
 @media (max-width: 768px) {
   .container-estatistica section {
-    margin: 30px 10px; /* Centraliza o conteúdo horizontalmente */
+    margin: 20px auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px;
+  }
+
+  .container-estatistica h2 {
+    font-size: 25px;
+  }
+
+  .container-estatistica table {
+    font-size: 14px;
+  }
+
+  .container-estatistica th,
+  .container-estatistica td {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-estatistica h2 {
+    text-decoration: none;
+  }
+
+  .container-estatistica section {
+    margin: 10px auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px;
+  }
+
+  .container-estatistica h2 {
+    font-size: 20px;
+  }
+
+  .container-estatistica table {
+    font-size: 12px;
+  }
+
+  .container-estatistica th,
+  .container-estatistica td {
+    padding: 5px;
+  }
+
+  .none {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-estatistica section {
+    margin: 10px auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px;
+  }
+
+  .container-estatistica h2 {
+    font-size: 18px;
+  }
+
+  .container-estatistica table {
+    font-size: 10px;
+  }
+
+  .container-estatistica th,
+  .container-estatistica td {
+    padding: 5px;
+  }
+
+  .none {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-estatistica section {
+    margin: 10px auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px;
+  }
+
+  .container-estatistica h2 {
+    font-size: 16px;
+  }
+
+  .container-estatistica table {
+    font-size: 8px;
+  }
+
+  .container-estatistica th,
+  .container-estatistica td {
+    padding: 5px;
+  }
+
+  .none {
+    display: none;
   }
 }
