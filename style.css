@@ -213,28 +213,69 @@ nav ul li a:hover {
   text-underline-offset: 9px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   header .search input {
-    width: 300px;
-  }
-  header .icons {
-    gap: 30px;
+    width: 400px;
+    height: 30px;
+    padding: 10px;
   }
   header .search ion-icon {
-    font-size: 40px;
+    font-size: 30px;
   }
-  header .logo a img {
-    width: 80px;
-    height: 80px;
+  header .icons {
+    gap: 50px;
   }
   nav ul li {
-    margin: 0 20px;
+    margin: 0 30px;
   }
   nav ul li a {
     font-size: 15px;
   }
 }
 
+@media (max-width: 768px) {
+  header .search input {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+  }
+  header .search ion-icon {
+    font-size: 30px;
+  }
+  header .icons {
+    gap: 30px;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  header .search {
+    display: none;
+  }
+  header .icons {
+    gap: 20px;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .bt-login a {
+    font-size: 30px;
+  }
+
+  header .logo a img {
+    width: 50px;
+    height: 50px;
+  }
+}
 /* ----------------------------Função de subir para o topo----------------------------*/
 #topButton {
   position: fixed;
@@ -262,13 +303,23 @@ nav ul li a:hover {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   #topButton {
     width: 40px;
     height: 40px;
   }
   #topButton ion-icon {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  #topButton {
+    width: 30px;
+    height: 30px;
+  }
+  #topButton ion-icon {
+    font-size: 20px;
   }
 }
 
@@ -305,7 +356,7 @@ footer a:hover {
   text-underline-offset: 8px; /*Distância de deslocamento de uma linha de decoração de texto */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   footer p {
     font-size: 15px;
   }
@@ -313,3 +364,21 @@ footer a:hover {
     font-size: 15px;
   }
 }
+
+@media (max-width: 425px) {
+  footer p {
+    font-size: 12px;
+  }
+  footer a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  footer p {
+    font-size: 8px;
+  }
+  footer a {
+    font-size: 8px;
+  }
+} 

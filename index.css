@@ -144,6 +144,102 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .header-card-slider h2 {
+    font-size: 20px;
+  }
+
+  .header-card-slider p {
+    font-size: 15px;
+  }
+
+  .plays-card-slider .play01 p {
+    font-size: 15px;
+  }
+
+  .plays-card-slider .play02 p {
+    font-size: 15px;
+  }
+
+  .plays-card-slider img {
+    max-width: 100px; /* Defina o tamanho máximo desejado */
+    height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .card-slider .score-card-slider p {
+    font-size: 35px;
+  }
+
+  .play01 p,
+  .play02 p {
+    font-size: 15px;
+  }
+
+  #prevButton,
+  #nextButton {
+    height: 100px; /*Defina a altura desejada */
+    padding: 10px 20px; /* Aumente o padding para ajustar o tamanho dos botões */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px; /* Aumente o tamanho da fonte */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #prevButton,
+  #nextButton {
+    height: 80px; /*Defina a altura desejada */
+    padding: 8px; /* Aumente o padding para ajustar o tamanho dos botões */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px; /* Aumente o tamanho da fonte */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #prevButton,
+  #nextButton {
+    height: 80px; /*Defina a altura desejada */
+    padding: 5px; /* Aumente o padding para ajustar o tamanho dos botões */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px; /* Aumente o tamanho da fonte */
+  }
+
+  .header-card-slider h2 {
+    font-size: 18px;
+  }
+
+  .header-card-slider p {
+    font-size: 12px;
+  }
+
+  .card-slider .score-card-slider p {
+    font-size: 20px;
+  }
+
+  .play01 img {
+    max-width: 80px; /* Defina o tamanho máximo desejado */
+    height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .play02 img {
+    max-width: 80px; /* Defina o tamanho máximo desejado */
+    height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .play01 p,
+  .play02 p {
+    font-size: 10px;
+  }
+}
+
 /*---------------- tabela de classificação--------- */
 .container-class {
   max-width: 1200px;
@@ -218,21 +314,43 @@
   .container-class th,
   .container-class td {
     padding: 5px;
-    font-size: 14px;
+  }
+  .container-class th {
+    font-size: 12px;
+  }
+  .container-class tr {
+    font-size: 12px;
   }
   .container-class h2 {
     font-size: 20px;
   }
+  .container-class .alinhar-time img {
+    max-width: 30px;
+  }
+  .container-class .primeiros {
+    border-left: 3px solid rgb(1, 255, 1);
+  }
+  .container-class .ultimo {
+    border-left: 3px solid red;
+  }
+}
+
+@media (max-width: 425px) {
+  .container-class .alinhar-time img {
+    max-width: 20px;
+  }
+  .container-class th {
+    font-size: 10px;
+  }
   .container-class tr {
-    font-size: 14px;
+    font-size: 10px;
   }
-  .container-class tr:hover {
-    font-size: 14px;
+  .container-class h2 {
+    font-size: 15px;
   }
-  .alinhar-time img {
-    max-width: 30px; /* Defina o tamanho máximo desejado */
-    height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
-    margin-right: 10px;
+
+  .none {
+    display: none;
   }
 }
 
@@ -291,6 +409,13 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .time {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 /* ---------Noticias da Home--------- */
 .news-container {
   background-color: var(--bg-first);
@@ -305,6 +430,8 @@
 .news {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .news-container h2 {
@@ -400,7 +527,69 @@
   margin-top: 20px;
 }
 
-/* ----------------------------Top 3 Artilheiros da Home----------------------------*/
+@media screen and (max-width: 768px) {
+  .news {
+    justify-content: center;
+  }
+  .card-new {
+    max-width: 100%;
+  }
+  .card-new img {
+    max-width: 100%;
+  }
+  .new-title {
+    font-size: 20px;
+  }
+  .new-subtitle {
+    font-size: 14px;
+  }
+  .btn-new button {
+    font-size: 14px;
+  }
+  .share {
+    font-size: 20px;
+  }
+  .tempo {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .new-title {
+    font-size: 16px;
+  }
+  .new-subtitle {
+    font-size: 12px;
+  }
+  .btn-new button {
+    font-size: 12px;
+  }
+  .share {
+    font-size: 16px;
+  }
+  .tempo {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .new-title {
+    font-size: 14px;
+  }
+  .new-subtitle {
+    font-size: 10px;
+  }
+  .btn-new button {
+    font-size: 10px;
+  }
+  .share {
+    font-size: 14px;
+  }
+  .tempo {
+    font-size: 8px;
+  }
+}
+
+/* ----------------------------Lideres da Liga da Home----------------------------*/
 .container-top {
   background-color: var(--bg-first);
   max-width: 1200px;
@@ -425,6 +614,7 @@
   display: flex;
   justify-content: space-around;
   gap: 60px;
+  flex-wrap: wrap;
 }
 
 .box-artilheiro {
@@ -472,25 +662,31 @@
 
 @media screen and (max-width: 768px) {
   .container-artilheiro {
-    gap: 30px;
+    justify-content: center;
   }
-  .box-arti {
-    width: 150px;
+  .box-artilheiro {
+    max-width: 100%;
   }
-  .box-arti img {
-    max-height: 100%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 3px solid var(--color-first);
-    width: 100%;
-    background-color: white;
-  }
-  .box-arti h2 {
-    padding: 10px 0px 10px 0px;
+
+  .box-artilheiro h2 {
     font-size: 20px;
-    color: var(--color-first);
+  }
+  .box-artilheiro td {
+    font-size: 12px;
   }
 }
 
+@media screen and (max-width: 375px) {
+  .box-artilheiro .img {
+    max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .box-artilheiro .img {
+    max-width: 180px;
+  }
+}
 /* ----------------------------Best player----------------------------  */
 .container-best-player {
   background-color: var(--bg-first);
@@ -515,6 +711,7 @@
 .container-player {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .img-best-player img {
@@ -606,4 +803,37 @@
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  .container-player {
+    justify-content: center;
+  }
+  .info-best-player {
+    max-width: 100%;
+  }
+  .info-best-player .number-player {
+    font-size: 20px;
+  }
+  .info-best-player .name-player {
+    font-size: 30px;
+  }
+  .info-best-player .position-player {
+    font-size: 20px;
+  }
+  .info-best-player p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .stats-best-player {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .img-best-player img {
+    max-width: 250px;
+  }
 }
