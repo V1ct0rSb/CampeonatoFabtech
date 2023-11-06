@@ -39,7 +39,7 @@ main {
 .informacao {
   text-align: center;
   margin: 20px;
-  color: var(--color-second);
+  color: var(--color-first);
   padding: 40px;
   border-radius: 20px;
   transition: 0.2s;
