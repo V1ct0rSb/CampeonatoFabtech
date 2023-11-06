@@ -1,121 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campeonato</title>
     <link rel="stylesheet" href="contato.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiv5KWizAkJ5Wr8Qu8VAOrb1GavS7lwPNQEA&usqp=CAU" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-</head>
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiv5KWizAkJ5Wr8Qu8VAOrb1GavS7lwPNQEA&usqp=CAU"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">
-          <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Campeonato, Time ou Jogador" />
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+
+      <div class="icons">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+              <ion-icon name="sunny-outline" class="sunny-icon"></ion-icon>
+              <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            </div>
+          </label>
         </div>
-  
-        <div class="search">
-          <input type="text" placeholder="Campeonato, Time ou Jogador" />
-          <ion-icon name="search-outline"></ion-icon>
+
+        <div class="bt-login">
+          <a href="login.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </a>
         </div>
-  
-        <div class="icons">
-          <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div class="slider round">
-                <ion-icon name="sunny-outline" class="sunny-icon"></ion-icon>
-                <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
-              </div>
-            </label>
-          </div>
-  
-          <div class="bt-login">
-            <a href="login.html">
-              <ion-icon name="person-circle-outline"></ion-icon>
-            </a>
-          </div>
-        </div>
+      </div>
     </header>
 
     <div class="container-header">
-        <nav>
-            <ul>
-                <li><a href="partidas.html">Partidas</a></li>
-                <li><a href="classificacao.html">Classificação</a></li>
-                <li><a href="estatistica.html">Estatísticas</a></li>
-                <li><a href="midia.html">Mídia</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="partidas.html">Partidas</a></li>
+          <li><a href="classificacao.html">Classificação</a></li>
+          <li><a href="estatistica.html">Estatísticas</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+        </ul>
+      </nav>
     </div>
 
     <button id="topButton" onclick="scrollTopFunction()">
-        <ion-icon name="arrow-up-outline"></ion-icon>
+      <ion-icon name="arrow-up-outline"></ion-icon>
     </button>
 
     <main>
-        <div class="cont">
-            <div class="flex">
-                <div class="hablar">
-                    <div class="informacao">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        <h2>Localização</h2>
-                        <h4>Rua João Bosco de Menezes 384, Loja 32, Atalaia - Aracaju/SE</h4>
-                    </div>
-
-                    <div class="informacao">
-                        <i class="bi bi-clock-fill"></i>
-                        <h2>Horário Presencial</h2>
-                        <h4>7AM - 20PM</h4>
-                        <h4>Terça a Sexta</h4>
-                    </div>
-
-                    <div class="informacao">
-                        <i class="bi bi-person-rolodex"></i>
-                        <h2>Contatos</h2>
-                        <h4>(79) 4002-8922</h4>
-                        <h4>futebol.amador2023@gmail.com</h4>
-                    </div>
-                </div>
+      <div class="cont">
+        <div class="flex">
+          <div class="hablar">
+            <div class="informacao">
+              <i class="bi bi-geo-alt-fill"></i>
+              <h2>Localização</h2>
+              <h4>
+                Rua João Bosco de Menezes 384, Loja 32, Atalaia - Aracaju/SE
+              </h4>
             </div>
+
+            <div class="informacao">
+              <i class="bi bi-clock-fill"></i>
+              <h2>Horário Presencial</h2>
+              <h4>7AM - 20PM</h4>
+              <h4>Terça a Sexta</h4>
+            </div>
+
+            <div class="informacao">
+              <i class="bi bi-person-rolodex"></i>
+              <h2>Contatos</h2>
+              <h4>(79) 4002-8922</h4>
+              <h4>futebol.amador2023@gmail.com</h4>
+            </div>
+          </div>
         </div>
+      </div>
 
+      <div class="container">
+        <h1>Entre em Contato</h1>
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
 
-        <div class="container">
-            <h1>Entre em Contato</h1>
-            <form class="contact-form" action="#" method="post">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
+          <label for="email">E-mail:</label>
+          <input type="text" id="email" name="email" required />
 
-                <label for="email">E-mail:</label>
-                <input type="text" id="email" name="email" required>
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </main>
 
-
-
     <footer>
-        <p>&copy; 2023</p>
-        <p>
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Termos de Uso</a>
-            <a href="contato.html">Contato</a>
-        </p>
+      <p>&copy; 2023</p>
+      <p>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="contato.html">Contato</a>
+      </p>
     </footer>
-</body>
-<!-- Icons  -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" ></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<!-- Levar para o topo da página -->
-<script src="levarAoTopo.js"></script>
-<!-- Dark mode -->
-<script src="darkMode.js"></script>
+  </body>
+  <!-- Icons  -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <!-- Levar para o topo da página -->
+  <script src="levarAoTopo.js"></script>
+  <!-- Dark mode -->
+  <script src="darkMode.js"></script>
 </html>
