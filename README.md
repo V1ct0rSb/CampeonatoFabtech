@@ -1,5 +1,10 @@
 # CampeonatoFabtech
 
+<h2>Introdução</h2>
+
+<p>Na disciplina de Residência de Software 1, uma iniciativa inovadora ganha vida através da colaboração entre os estudantes e as empresas selecionadas em parceria com o Porto Digital. Este ambiente proporciona não apenas aprendizado teórico, mas também a oportunidade única de aplicar esse conhecimento em projetos práticos. </p>
+<p>Um exemplo notável é esse projeto, desenvolvido durante essa disciplina, demonstrando a capacidade dos squads em abordar desafios reais e entregar soluções eficazes. Este é apenas um dos muitos casos em que a teoria se transforma em prática, preparando os alunos para enfrentar os complexos cenários do mundo profissional de desenvolvimento de software.</p>
+
 <h2>Sumário</h2>
 <ul>
     <li><a href="#descricao">Descrição</a></li>
